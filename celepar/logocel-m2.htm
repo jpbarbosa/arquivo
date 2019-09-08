@@ -1,0 +1,76 @@
+<HTML>
+<HEAD><TITLE>CELEPAR</TITLE></HEAD>
+<SCRIPT LANGUAGE = "JavaScript">
+<!-- // hide from old browsers
+
+var version = 0;
+
+if (navigator.userAgent.indexOf("Mozilla/3.0") != -1) version = "n3";
+else if (navigator.userAgent.indexOf("Mozilla/4.0") != -1) version = "n3";
+else if (navigator.userAgent.indexOf("MSIE") != -1) version = "e3";
+else if (navigator.userAgent.indexOf("Mozilla/2.0") != -1) version = "n2";
+
+if (version == "n3") {
+
+c1 = new Image(35,65);
+c1.src = "cont3.gif";
+
+c2 = new Image(35,65);
+c2.src = "cont4.gif";
+
+}
+
+function img_all_inact() {
+                if (version == "n3") {
+				img_inact('c');
+				}
+}
+
+function img_act(imgName) {
+               if (version == "n3") {
+               imgOn = eval(imgName + "2.src");
+               document [imgName].src = imgOn;
+               }
+}
+       
+function img_inact(imgName) {
+               if (version == "n3") {
+               imgOff = eval(imgName + "1.src");
+               document [imgName].src = imgOff;
+               }
+}
+// -->
+</SCRIPT>
+<BODY BGCOLOR="#FFFFC8" BACKGROUND="fundo2.jpg">
+<TABLE CELLSPACING=0 CELLPADDING=0 WIDTH="100%" HEIGHT="100%">
+<TR><TD ALIGN="CENTER" VALIGN="MIDDLE">
+<A HREF="open.htm" TARGET="_top">
+<IMG SRC="cele-1.gif" WIDTH=65 HEIGHT=65 BORDER=0><BR>
+</A>
+</TD></TR>
+<TR><TD ALIGN="CENTER" VALIGN="TOP">
+<A HREF="open.htm" TARGET="_top">
+<IMG SRC="cele-2.gif" WIDTH=65 HEIGHT=65 BORDER=0><BR>
+</A>
+</TD></TR>
+<TR><TD ALIGN="CENTER" VALIGN="MIDDLE">
+<IMG SRC="cont0.gif" WIDTH=1 HEIGHT=65 BORDER=0><BR>
+</TD></TR>
+<TR><TD ALIGN="CENTER" VALIGN="MIDDLE">
+<A HREF="desktop-m1.htm" TARGET="desktop"
+        onMouseover = "img_act('c')"
+        onMouseout = "img_inact('c')">
+<NOSCRIPT>
+<IMG SRC="cont3.gif" NAME="i" WIDTH="35" HEIGHT="65" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"cont3.gif\" NAME=\"c\" WIDTH=\"35\" HEIGHT=\"65\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"cont3.gif\" NAME=\"c\" WIDTH=\"35\" HEIGHT=\"65\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+</TD></TR>
+</TABLE>
+</BODY>
+</HTML>

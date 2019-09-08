@@ -1,0 +1,54 @@
+<HTML><HEAD><TITLE>name ingá</TITLE></HEAD>
+<SCRIPT Language="VBScript">
+<!--
+
+option explicit
+
+dim majorver
+dim ua
+dim ie3
+dim ie4
+dim aol
+dim minorver4
+dim update
+dim winplat
+dim nav
+dim intButton
+
+set nav = navigator
+
+ua = "<%=Mozilla/2.0 (compatible; MSIE 3.02; Update a; Windows 95)%>"
+
+minorver4 = ""
+
+if len(ua) >=1 then 'nav object is supported
+    winplat = mid(ua,instr(ua,"Windows") + 8, 2)
+    majorver = mid(ua,instr(ua,"MSIE") + 5, 1)
+    ie3 = majorver = 3 and (winplat = "NT" or winplat = "95" or winplat = "32")
+    ie4 = majorver = 4 and (winplat = "NT" or winplat = "95" or winplat = "32")
+    update = instr(ua,"Update a")
+    aol = instr(ua,"AOL")
+
+    if ie4 then minorver4 = mid(ua,instr(ua,"MSIE") + 7, 3)
+    If (ie3 or minorver4 = "0b1") and update = 0 and aol = 0 then 'filter down to ie3 or ie40b1(PP1) then see if "update a" is true and not AOL
+        'display information back to the users
+        intButton = msgbox ("Esta página requer Authenticode 2.0!  This update provides valuable new features and renews key Authenticode certificates that help you safely download software from the Web. The update should take less than 5 minutes to download over a 28.8 Kbps modem. Do you want to visit our Authenticode Update page?", 4 + 64, "Descarregue o Authenticode 2.0 Update Agora!")
+        If intButton = 6 then
+            location.href="http://www.microsoft.com/ie/security/authent2.htm"
+        end if
+    end if
+end if
+-->
+</SCRIPT>
+<BODY BGCOLOR="#000000">
+<OBJECT CLASSID="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" CODEBASE="http://active.macromedia.com/flash/cabs/swflash.cab#version=2,1,0,7" WIDTH=100% HEIGHT=100% BGCOLOR="#000000" NAME="sw" ID="sw">
+<PARAM NAME="Type" VALUE="application/x-shockwave-flash">
+<PARAM NAME="Movie" VALUE="portugues.swf">
+<PARAM NAME="Play" VALUE="True">
+<PARAM NAME="Quality" VALUE="Best">
+<PARAM NAME="Loop" VALUE="False">
+<PARAM NAME="Scale" VALUE="Exactfit">
+</OBJECT>
+<EMBED SRC="portugues.swf" PLUGINSPAGE="/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" TYPE="application/x-shockwave-flash" WIDTH="100%" HEIGHT="100%" PLAY="True" LOOP="False" QUALITY="Best" SCALE="Exactfit">
+</BODY>
+</HTML>

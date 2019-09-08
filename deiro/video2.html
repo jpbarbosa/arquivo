@@ -1,0 +1,189 @@
+<HTML>
+<HEAD><TITLE>DEIRO - Video2</TITLE>
+<SCRIPT LANGUAGE = "JavaScript">
+<!-- // hide from old browsers
+
+var version = 0;
+
+if (navigator.userAgent.indexOf("Mozilla/3.0") != -1) version = "n3";
+else if (navigator.userAgent.indexOf("Mozilla/4.0") != -1) version = "n3";
+else if (navigator.userAgent.indexOf("MSIE") != -1) version = "e3";
+else if (navigator.userAgent.indexOf("Mozilla/2.0") != -1) version = "n2";
+
+if (version == "n3") {
+
+curitiba1 = new Image(158,90);
+curitiba1.src = "curitiba1.gif";
+
+curitiba2 = new Image(158,90);
+curitiba2.src = "curitiba2.gif";
+
+gazeta1 = new Image(158,90);
+gazeta1.src = "gazeta1.gif";
+
+gazeta2 = new Image(158,90);
+gazeta2.src = "gazeta2.gif";
+
+parana1 = new Image(158,90);
+parana1.src = "parana1.gif";
+
+parana2 = new Image(158,90);
+parana2.src = "parana2.gif";
+
+deiro1 = new Image(158,90);
+deiro1.src = "deiro1.gif";
+
+deiro2 = new Image(158,90);
+deiro2.src = "deiro2.gif";
+
+d1 = new Image(158,90);
+d1.src = "deiro1.gif";
+
+d2 = new Image(158,90);
+d2.src = "deiro2.gif";
+
+e1 = new Image(158,90);
+e1.src = "deiro1.gif";
+
+e2 = new Image(158,90);
+e2.src = "deiro2.gif";
+
+f1 = new Image(158,90);
+f1.src = "deiro1.gif";
+
+f2 = new Image(158,90);
+f2.src = "deiro2.gif";
+
+}
+
+function img_all_inact() {
+               if (version == "n3") {
+				img_inact('curitiba');
+				img_inact('gazeta');
+				img_inact('parana')	;
+				img_inact('deiro');
+				img_inact('d');
+				img_inact('e');
+				img_inact('f');
+				}
+}
+
+function img_act(imgName) {
+               if (version == "n3") {
+               imgOn = eval(imgName + "2.src");
+               document [imgName].src = imgOn;
+               }
+}
+       
+function img_inact(imgName) {
+               if (version == "n3") {
+               imgOff = eval(imgName + "1.src");
+               document [imgName].src = imgOff;
+               }
+}
+// -->
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="#000000" !onLoad="img_all_inact()"><CENTER>
+
+<A HREF="curitiba.html" TARGET="Video1"
+		onMouseover = "img_act('curitiba')"
+		onMouseout = "img_inact('curitiba')">
+<NOSCRIPT>
+<IMG SRC="curitiba2.gif" NAME="curitiba" WIDTH="158" HEIGHT="90" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"curitiba1.gif\" NAME=\"curitiba\" WIDTH=\"158\" HEIGHT=\"90\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"curitiba2.gif\" NAME=\"curitiba\" WIDTH=\"158\" HEIGHT=\"90\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+
+<A HREF="gazeta.html" TARGET="Video1"
+		onMouseover = "img_act('gazeta')"
+		onMouseout = "img_inact('gazeta')">
+<NOSCRIPT>
+<IMG SRC="gazeta2.gif" NAME="gazeta" WIDTH="158" HEIGHT="90" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"gazeta1.gif\" NAME=\"gazeta\" WIDTH=\"158\" HEIGHT=\"90\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"gazeta2.gif\" NAME=\"gazeta\" WIDTH=\"158\" HEIGHT=\"90\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+
+<A HREF="parana.html" TARGET="Video1"
+		onMouseover = "img_act('parana')"
+		onMouseout = "img_inact('parana')">
+<NOSCRIPT>
+<IMG SRC="parana2.gif" NAME="gazeta" WIDTH="158" HEIGHT="90" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"parana1.gif\" NAME=\"parana\" WIDTH=\"158\" HEIGHT=\"90\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"parana2.gif\" NAME=\"parana\" WIDTH=\"158\" HEIGHT=\"90\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+
+<A HREF="video1.html" TARGET="Video1"
+		onMouseover = "img_act('deiro')"
+		onMouseout = "img_inact('deiro')">
+<NOSCRIPT>
+<IMG SRC="deiro2.gif" NAME="deiro" WIDTH="158" HEIGHT="90" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"deiro1.gif\" NAME=\"deiro\" WIDTH=\"158\" HEIGHT=\"90\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"deiro2.gif\" NAME=\"deiro\" WIDTH=\"158\" HEIGHT=\"90\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+
+<A HREF="video1.html" TARGET="Video1"
+		onMouseover = "img_act('d')"
+		onMouseout = "img_inact('d')">
+<NOSCRIPT>
+<IMG SRC="deiro2.gif" NAME="d" WIDTH="158" HEIGHT="90" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"deiro1.gif\" NAME=\"d\" WIDTH=\"158\" HEIGHT=\"90\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"deiro2.gif\" NAME=\"d\" WIDTH=\"158\" HEIGHT=\"90\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+
+<A HREF="video1.html" TARGET="Video1"
+		onMouseover = "img_act('e')"
+		onMouseout = "img_inact('e')">
+<NOSCRIPT>
+<IMG SRC="deiro2.gif" NAME="e" WIDTH="158" HEIGHT="90" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"deiro1.gif\" NAME=\"e\" WIDTH=\"158\" HEIGHT=\"90\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"deiro2.gif\" NAME=\"e\" WIDTH=\"158\" HEIGHT=\"90\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+
+<A HREF="video1.html" TARGET="Video1"
+		onMouseover = "img_act('f')"
+		onMouseout = "img_inact('f')">
+<NOSCRIPT>
+<IMG SRC="deiro2.gif" NAME="f" WIDTH="158" HEIGHT="90" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"deiro1.gif\" NAME=\"f\" WIDTH=\"158\" HEIGHT=\"90\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"deiro2.gif\" NAME=\"f\" WIDTH=\"158\" HEIGHT=\"90\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+
+</CENTER>
+</BODY>
+</HTML>

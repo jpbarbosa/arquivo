@@ -1,0 +1,37 @@
+<HTML>
+<HEAD><TITLE>PLUMA - Passagens - Desk - Ok</TITLE></HEAD>
+<script language="javascript">
+/* Funcao para escolha da pagina */
+
+function EscolheOrigemDestino()
+{
+        /* Pega a escolha */
+        aEsc = eval(parent.frames[0].document.MENU1.ORIGEM1.selectedIndex)
+        aEsc1 = eval(parent.frames[1].document.MENU2.ORIGEM1.selectedIndex)
+
+        if (aEsc == 0) {	
+        } else if(aEsc < 10) {
+		if (aEsc1 == 0) {
+		} else if (aEsc1 < 10) {
+                	parent.parent.parent.parent.location = "p-o0"+parent.frames[0].document.MENU1.ORIGEM1.selectedIndex+"-0"+parent.frames[1].document.MENU2.ORIGEM1.selectedIndex+".html" 
+		} else {
+                	parent.parent.parent.parent.location = "p-o"+parent.frames[0].document.MENU1.ORIGEM1.selectedIndex+"-"+parent.frames[1].document.MENU2.ORIGEM1.selectedIndex+".html"
+		}				
+        } else {
+		if (aEsc1 == 0) {
+		} else if (aEsc1 < 10) {
+                	parent.parent.parent.parent.location = "p-o0"+parent.frames[0].document.MENU1.ORIGEM1.selectedIndex+"-0"+parent.frames[1].document.MENU2.ORIGEM1.selectedIndex+".html"
+		} else {
+                	parent.parent.parent.parent.location = "p-o"+parent.frames[0].document.MENU1.ORIGEM1.selectedIndex+"-"+parent.frames[1].document.MENU2.ORIGEM1.selectedIndex+".html"
+		}				
+        } 
+}
+</script> 
+<BODY BGCOLOR="#FFFFFF" TEXT="#FFFFFF" VLINK="#800000" ALINK="#800000" LINK="#FF0000" BACKGROUND="pas4.jpg">
+<CENTER>
+<A HREF="javascript:EscolheOrigemDestino()">
+<IMG SRC="pas5.jpg" WIDTH=106 HEIGHT=20 BORDER=0><BR>
+</A>
+</CENTER>
+</BODY>
+</HTML>

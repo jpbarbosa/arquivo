@@ -1,0 +1,75 @@
+<HTML><HEAD><TITLE>ACTS</TITLE></HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+browser_name = navigator.appName;
+browser_version = parseFloat(navigator.appVersion);
+if (browser_name == "Microsoft Internet Explorer" && browser_version >= 4.0) { preload = 'true'; }
+else { preload = 'false'; }
+if (preload == 'true')
+{
+	b1=new Image(10,14);b1.src="images/buttons/but-1-1.jpg";
+	b2=new Image(10,14);b2.src="images/buttons/but-2-1.jpg";
+	b3=new Image(10,14);b3.src="images/buttons/but-3-1.jpg";
+	b4=new Image(10,14);b4.src="images/buttons/but-4-1.jpg";
+	b5=new Image(10,14);b5.src="images/buttons/but-5-1.jpg";
+	b6=new Image(10,14);b6.src="images/buttons/but-6-1.jpg";
+}
+function status(source,image,sourcex,imagex)
+{
+	if (browser_name == "Microsoft Internet Explorer")
+	{
+		document.images[source].src = "images/buttons/"+image + "";
+	}
+	else
+	{
+		document.layers['Layer1'].document.images[source].src = "images/buttons/"+image + "";
+	}
+}
+function but1()
+{
+	parent.frames[3].location = "sub-1-historico.htm"
+	parent.frames[5].location = "item-1-historico.htm"	
+	self.location = "menu-1.htm";
+}
+function but2()
+{
+	parent.frames[3].location = "sub-2-servicos.htm"
+	parent.frames[5].location = "item-2-servicos.htm"	
+	self.location = "menu-2.htm";
+}
+function but3()
+{
+	parent.frames[3].location = "sub-3-produtos.htm"
+	parent.frames[5].location = "item-3-produtos.htm"	
+	self.location = "menu-3.htm";
+}
+function but4()
+{
+	parent.frames[3].location = "sub-4-informacoes.htm"
+	parent.frames[5].location = "item-4-informacoes.htm"	
+	self.location = "menu-4.htm";
+}
+function but5()
+{
+	parent.frames[3].location = "sub-5-novidades.htm"
+	parent.frames[5].location = "item-5-novidades.htm"	
+	self.location = "menu-5.htm";
+}
+</SCRIPT>
+<BODY BACKGROUND="images/menu.jpg">
+<DIV ID="Layer1" STYLE="position:absolute; left:0; top:0">
+<TABLE WIDTH="188" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+    	<TD WIDTH="45">
+		</TD>
+		<TD WIDTH="143" VALIGN="TOP">
+		<IMG SRC="images/buttons/but-0-1.gif" WIDTH=110 HEIGHT=30 BORDER=0 NAME="but-1" USEMAP="#but-1"><MAP NAME="but-1"><AREA SHAPE="RECT" COORDS="0,0,110,30" HREF="JavaScript:but1()" onmouseOver=status("but-1","but-1-1.jpg") onmouseOut=status("but-1","but-0-1.gif")></MAP><BR>
+		<IMG SRC="images/buttons/but-0-1.gif" WIDTH=110 HEIGHT=30 BORDER=0 NAME="but-2" USEMAP="#but-2"><MAP NAME="but-2"><AREA SHAPE="RECT" COORDS="0,0,110,30" HREF="JavaScript:but2()" onmouseOver=status("but-2","but-2-1.jpg") onmouseOut=status("but-2","but-0-1.gif")></MAP><BR>
+		<IMG SRC="images/buttons/but-0-1.gif" WIDTH=110 HEIGHT=30 BORDER=0 NAME="but-3" USEMAP="#but-3"><MAP NAME="but-3"><AREA SHAPE="RECT" COORDS="0,0,110,30" HREF="JavaScript:but3()" onmouseOver=status("but-3","but-3-1.jpg") onmouseOut=status("but-3","but-0-1.gif")></MAP><BR>
+		<IMG SRC="images/buttons/but-0-1.gif" WIDTH=110 HEIGHT=30 BORDER=0 NAME="but-4" USEMAP="#but-4"><MAP NAME="but-4"><AREA SHAPE="RECT" COORDS="0,0,110,30" HREF="JavaScript:but4()" onmouseOver=status("but-4","but-4-1.jpg") onmouseOut=status("but-4","but-0-1.gif")></MAP><BR>
+		<IMG SRC="images/buttons/but-0-1.gif" WIDTH=110 HEIGHT=30 BORDER=0 NAME="but-5" USEMAP="#but-5"><MAP NAME="but-5"><AREA SHAPE="RECT" COORDS="0,0,110,30" HREF="JavaScript:but5()" onmouseOver=status("but-5","but-5-1.jpg") onmouseOut=status("but-5","but-0-1.gif")></MAP><BR>
+		</TD>
+	</TR>
+</TABLE>
+</DIV>
+</BODY>
+</HTML>

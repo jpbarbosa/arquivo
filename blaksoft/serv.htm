@@ -1,0 +1,54 @@
+<HTML>
+<HEAD><TITLE>BlakSoft - Serviços</TITLE></HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- // hide from old browsers
+var version = 0;
+if (navigator.userAgent.indexOf("Mozilla/3.0") != -1) version = "n3";
+else if (navigator.userAgent.indexOf("Mozilla/4.0") != -1) version = "n3";
+else if (navigator.userAgent.indexOf("MSIE") != -1) version = "e3";
+if (version == "n3"){
+serv1 = new Image(100,50);serv1.src = "images/serv1.gif";
+serv2 = new Image(100,50);serv2.src = "images/serv2.gif";
+clie1 = new Image(100,50);clie1.src = "images/clie1.gif";
+clie2 = new Image(100,50);clie2.src = "images/clie2.gif";
+info1 = new Image(100,50);info1.src = "images/info1.gif";
+info2 = new Image(100,50);info2.src = "images/info2.gif";
+mail1 = new Image(100,50);mail1.src = "images/mail1.gif";
+mail2 = new Image(100,50);mail2.src = "images/mail2.gif";}
+function img_all_inact(){if (version == "n3"){img_inact('serv');}{img_inact('clie');}{img_inact('info');}{img_inact('mail');}}
+function img_act(imgName){if (version == "n3"){imgOn = eval(imgName + "2.src");document [imgName].src = imgOn;}}      
+function img_inact(imgName){if (version == "n3"){imgOff = eval(imgName + "1.src");document [imgName].src = imgOff;}}
+// -->
+</SCRIPT>
+<BODY BACKGROUND="images/fundo.jpg" BGCOLOR="#000000" TEXT="#FFFFFF" LINK="#FFFF00" VLINK="#008080" ALINK="#000000"><CENTER>
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=600>
+<TR>
+<TD HEIGHT=20 COLSPAN=9></TD>
+</TR>
+<TR>
+<TD WIDTH=10></TD>
+<TD WIDTH=100><A HREF="index.htm"><IMG SRC="images/logo2.gif" WIDTH=100 HEIGHT=50 BORDER=0></BR></TD>
+<TD WIDTH=380 COLSPAN=5><IMG SRC="images/barra.gif" WIDTH=380 HEIGHT=2 BORDER=0></BR></TD>
+<TD WIDTH=100><IMG SRC="images/serv2.gif" WIDTH=100 HEIGHT=50 BORDER=0></BR></TD>
+<TD WIDTH=10></TD>
+</TR>
+<TR>
+<TD HEIGHT=250 COLSPAN=9></TD>
+</TR>
+<TR>
+<TD WIDTH=10></TD>
+<TD WIDTH=100><A HREF="serv.htm" onMouseover="img_act('serv')" onMouseout="img_inact('serv')"><NOSCRIPT><IMG SRC="images/serv2.gif" WIDTH=100 HEIGHT=50 BORDER=0></NOSCRIPT><SCRIPT>{document.write("<IMG SRC=\"images/serv1.gif\" NAME=\"serv\" WIDTH=\"100\" HEIGHT=\"50\" BORDER=\"0\">");}</SCRIPT></BR></TD>
+<TD WIDTH=60><IMG SRC="images/barra.gif" WIDTH=60 HEIGHT=2 BORDER=0></BR></TD>
+<TD WIDTH=100><A HREF="clie.htm" onMouseover="img_act('clie')" onMouseout="img_inact('clie')"><NOSCRIPT><IMG SRC="images/clie2.gif" WIDTH=100 HEIGHT=50 BORDER=0></NOSCRIPT><SCRIPT>{document.write("<IMG SRC=\"images/clie1.gif\" NAME=\"clie\" WIDTH=\"100\" HEIGHT=\"50\" BORDER=\"0\">");}</SCRIPT></BR></TD>
+<TD WIDTH=60><IMG SRC="images/barra.gif" WIDTH=60 HEIGHT=2 BORDER=0></BR></TD>
+<TD WIDTH=100><A HREF="info.htm" onMouseover="img_act('info')" onMouseout="img_inact('info')"><NOSCRIPT><IMG SRC="images/info2.gif" WIDTH=100 HEIGHT=50 BORDER=0></NOSCRIPT><SCRIPT>{document.write("<IMG SRC=\"images/info1.gif\" NAME=\"info\" WIDTH=\"100\" HEIGHT=\"50\" BORDER=\"0\">");}</SCRIPT></BR></TD>
+<TD WIDTH=60><IMG SRC="images/barra.gif" WIDTH=60 HEIGHT=2 BORDER=0></BR></TD>
+<TD WIDTH=100><A HREF="mail.htm" onMouseover="img_act('mail')" onMouseout="img_inact('mail')"><NOSCRIPT><IMG SRC="images/mail2.gif" WIDTH=100 HEIGHT=50 BORDER=0></NOSCRIPT><SCRIPT>{document.write("<IMG SRC=\"images/mail1.gif\" NAME=\"mail\" WIDTH=\"100\" HEIGHT=\"50\" BORDER=\"0\">");}</SCRIPT></BR></TD>
+<TD WIDTH=10></TD>
+</TR>
+<TR>
+<TD HEIGHT=10 COLSPAN=9></TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,226 @@
+#VRML V2.0 utf8
+
+# Produced by 3D Studio MAX VRML 2.0 exporter, Version 1, Beta 0
+# MAX File: album.max, Date: Thu Jun 18 04:43:16 1998
+
+WorldInfo {
+  title "Album"
+  info "Leonardo Barros Personal Home-Page"
+}
+DEF NavInfo01 NavigationInfo {
+  type "EXAMINE"
+  visibilityLimit 0
+}
+DEF Camera_1 Viewpoint {
+  position 0 0 400
+  orientation 0 0 0 0
+  fieldOfView 0.7854
+  description "Foto 1"
+}
+DEF Camera_2 Viewpoint {
+  position 2.186e-005 500 -100
+  orientation 1 0 0 -1.571
+  fieldOfView 0.7854
+  description "Foto 2"
+}
+DEF Camera_3 Viewpoint {
+  position 500 0 -100
+  orientation 0.5774 -0.5774 0.5774 -2.094
+  fieldOfView 0.7854
+  description "Foto 3"
+}
+DEF Camera_4 Viewpoint {
+  position 0 0 -600
+  orientation 0.7071 -0.7071 0 -3.142
+  fieldOfView 0.7854
+  description "Foto 4"
+}
+DEF Camera_5 Viewpoint {
+  position 2.186e-005 -500 -100
+  orientation 0.5774 -0.5774 0.5774 -4.189
+  fieldOfView 0.7854
+  description "Foto 5"
+}
+DEF Camera_6 Viewpoint {
+  position -500 0 -100
+  orientation 0 1 0 -1.571
+  fieldOfView 0.7854
+  description "Foto 6"
+}
+DEF Group01-ROOT Transform {
+  translation 0 0 -100
+  children [
+    DEF Rectangle01-ROOT Transform {
+      translation -100 0 0
+      rotation -0.5774 -0.5774 0.5774 -2.094
+      children [
+        Shape {
+          appearance Appearance {
+            texture ImageTexture {
+              url "images/foto1.jpg"
+            }
+          }
+          geometry DEF Rectangle01-FACES IndexedFaceSet {
+            ccw TRUE
+            solid FALSE
+            coord DEF Rectangle01-COORD Coordinate { point [
+              100 0 -100, -100 0 -100, -100 0 100, 100 0 100]
+            }
+            texCoord DEF Rectangle01-TEXCOORD TextureCoordinate { point [
+              0 1, 1 1, 1 0, 0 0]
+            }
+            coordIndex [
+              2, 3, 0, -1, 1, 2, 0, -1]
+            texCoordIndex [
+              2, 3, 0, -1, 1, 2, 0, -1]
+            }
+        }
+      ]
+    },
+    DEF Rectangle02-ROOT Transform {
+      translation 0 -100 0
+      rotation 0.7071 0 0.7071 -3.142
+      scale 1 1 1
+      scaleOrientation 0 1 0 -0.7854
+      children [
+        Shape {
+          appearance Appearance {
+            texture ImageTexture {
+              url "images/foto2.jpg"
+            }
+          }
+          geometry DEF Rectangle02-FACES IndexedFaceSet {
+            ccw TRUE
+            solid FALSE
+            coord DEF Rectangle02-COORD Coordinate { point [
+              100 0 -100, -100 0 -100, -100 0 100, 100 0 100]
+            }
+            texCoord DEF Rectangle02-TEXCOORD TextureCoordinate { point [
+              1 1, 0 1, 0 0, 1 0]
+            }
+            coordIndex [
+              2, 3, 0, -1, 1, 2, 0, -1]
+            texCoordIndex [
+              2, 3, 0, -1, 1, 2, 0, -1]
+            }
+        }
+      ]
+    },
+    DEF Rectangle03-ROOT Transform {
+      translation 0 0 -100
+      rotation 0.5774 0.5774 0.5774 -4.189
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 1 1
+              shininess 1
+              transparency 0
+            }
+            texture ImageTexture {
+              url "images/foto3.jpg"
+            }
+          }
+          geometry DEF Rectangle03-FACES IndexedFaceSet {
+            ccw TRUE
+            solid FALSE
+            coord DEF Rectangle03-COORD Coordinate { point [
+              100 0 -100, -100 0 -100, -100 0 100, 100 0 100]
+            }
+            texCoord DEF Rectangle03-TEXCOORD TextureCoordinate { point [
+              0 1, 1 1, 1 0, 0 0]
+            }
+            coordIndex [
+              2, 3, 0, -1, 1, 2, 0, -1]
+            texCoordIndex [
+              2, 3, 0, -1, 1, 2, 0, -1]
+            }
+        }
+      ]
+    },
+    DEF Rectangle04-ROOT Transform {
+      translation 0 100 0
+      rotation 1 0 0 -3.142
+      children [
+        Shape {
+          appearance Appearance {
+            texture ImageTexture {
+              url "images/foto4.jpg"
+            }
+          }
+          geometry DEF Rectangle04-FACES IndexedFaceSet {
+            ccw TRUE
+            solid FALSE
+            coord DEF Rectangle04-COORD Coordinate { point [
+              100 0 -100, -100 0 -100, -100 0 100, 100 0 100]
+            }
+            texCoord DEF Rectangle04-TEXCOORD TextureCoordinate { point [
+              1 0, 0 0, 0 1, 1 1]
+            }
+            coordIndex [
+              2, 3, 0, -1, 1, 2, 0, -1]
+            texCoordIndex [
+              2, 3, 0, -1, 1, 2, 0, -1]
+            }
+        }
+      ]
+    },
+    DEF Rectangle05-ROOT Transform {
+      translation 100 0 0
+      rotation 0 0 1 -1.571
+      scale 1 1 1
+      scaleOrientation 0.6956 0.7184 0 -0.6115
+      children [
+        Shape {
+          appearance Appearance {
+            texture ImageTexture {
+              url "images/foto5.jpg"
+            }
+          }
+          geometry DEF Rectangle05-FACES IndexedFaceSet {
+            ccw TRUE
+            solid FALSE
+            coord DEF Rectangle05-COORD Coordinate { point [
+              100 0 -100, -100 0 -100, -100 0 100, 100 0 100]
+            }
+            texCoord DEF Rectangle05-TEXCOORD TextureCoordinate { point [
+              1 1, 0 1, 0 0, 1 0]
+            }
+            coordIndex [
+              2, 3, 0, -1, 1, 2, 0, -1]
+            texCoordIndex [
+              2, 3, 0, -1, 1, 2, 0, -1]
+            }
+        }
+      ]
+    },
+    DEF Rectangle06-ROOT Transform {
+      translation 0 0 100
+      rotation -1 0 0 -1.571
+      scale 1 1 1
+      children [
+        Shape {
+          appearance Appearance {
+            texture ImageTexture {
+              url "images/foto6.jpg"
+            }
+          }
+          geometry DEF Rectangle06-FACES IndexedFaceSet {
+            ccw TRUE
+            solid FALSE
+            coord DEF Rectangle06-COORD Coordinate { point [
+              100 0 -100, -100 0 -100, -100 0 100, 100 0 100]
+            }
+            texCoord DEF Rectangle06-TEXCOORD TextureCoordinate { point [
+              1 1, 0 1, 0 0, 1 0]
+            }
+            coordIndex [
+              2, 3, 0, -1, 1, 2, 0, -1]
+            texCoordIndex [
+              2, 3, 0, -1, 1, 2, 0, -1]
+            }
+        }
+      ]
+    }
+  ]
+}

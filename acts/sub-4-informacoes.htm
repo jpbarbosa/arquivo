@@ -1,0 +1,43 @@
+<HTML><HEAD><TITLE>ACTS</TITLE></HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+browser_name = navigator.appName;
+{
+	b10=new Image();b10.src="images/buttons/sub/but-4-infromacoes-0.gif";
+	b11=new Image();b11.src="images/buttons/sub/but-4-infromacoes-1.gif";
+	b12=new Image();b12.src="images/buttons/sub/but-4-infromacoes-2.gif";
+	b20=new Image();b20.src="images/buttons/sub/but-4-formulario-0.gif";
+	b21=new Image();b21.src="images/buttons/sub/but-4-formulario-1.gif";
+	b22=new Image();b22.src="images/buttons/sub/but-4-formulario-2.gif";
+}
+function status(source,image)
+{
+	document.images[source].src = "images/buttons/sub/"+image + "";
+}
+function but2()
+{
+	if (browser_name == "Microsoft Internet Explorer")
+	{
+		self.location = "sub-4-formulario.htm";
+		parent.frames[5].location = "item-4-formulario.htm";
+	}
+	else
+	{
+		self.location = "sub-4-formulario.htm";
+		parent.frames[5].location = "item-4-formulario-netscape.htm";
+	}
+}
+</SCRIPT>
+<BODY BACKGROUND="images/sub.gif">
+<TABLE BORDER="0" HEIGHT="30" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD WIDTH="110" VALIGN="BOTTOM">
+		<IMG SRC="images/buttons/sub/borda-l-1.gif" WIDTH=17 HEIGHT=17><IMG SRC="images/buttons/sub/but-4-informacoes-2.gif" WIDTH=70 HEIGHT=17 BORDER=0 NAME="but-1" USEMAP="#but-1"><MAP NAME="but-1"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="javascript:but1()" TARGET="item"></MAP><IMG SRC="images/buttons/sub/borda-r-1.gif" WIDTH=17 HEIGHT=17><BR>
+		</TD>
+		<TD WIDTH="110" VALIGN="BOTTOM">
+		<IMG SRC="images/buttons/sub/borda-l.gif" WIDTH=17 HEIGHT=17><IMG SRC="images/buttons/sub/but-4-formulario-0.gif" WIDTH=70 HEIGHT=17 BORDER=0 NAME="but-2" USEMAP="#but-2"><MAP NAME="but-2"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="javascript:but2()" onmouseOver=status("but-2","but-4-formulario-1.gif") onmouseOut=status("but-2","but-4-formulario-0.gif")></MAP><IMG SRC="images/buttons/sub/borda-r.gif" WIDTH=17 HEIGHT=17><BR>
+		</TD>
+	</TR>
+</TABLE>
+<IMG SRC="images/buttons/sub/borda-x.gif" WIDTH=2 HEIGHT=3 BORDER=0 ALIGN="TOP"><IMG SRC="images/buttons/sub/borda-y.gif" WIDTH=100 HEIGHT=2><BR>
+</BODY>
+</HTML>

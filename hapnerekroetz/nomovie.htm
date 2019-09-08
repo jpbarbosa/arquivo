@@ -1,0 +1,111 @@
+<HTML><HEAD><TITLE>Hapner & Kroetz - Advogados</TITLE></HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+browser_name = navigator.appName;
+browser_version = parseFloat(navigator.appVersion);
+{
+	port=new Image(115,30);port.src="images/but-port-2.gif";
+	engl=new Image(115,30);engl.src="images/but-engl-2.gif";
+}
+function status(source,image)
+{
+	document.images[source].src = "images/"+image + ".gif";
+}
+function portugues()
+{
+	if (browser_name == "Microsoft Internet Explorer" && browser_version >= 4.0)
+	{
+		window.location="portugues/index.htm";
+	}
+	if (browser_name == "Netscape" && browser_version >= 4.0)
+	{
+		var tools=java.awt.Toolkit.getDefaultToolkit();
+		var size=tools.getScreenSize();
+		w=size.width;
+		if (w <= 640)
+		{
+			window.location="netscape/low/portugues/index.htm";
+		}
+		else if (w > 640 && w <= 800)
+		{
+			window.location="netscape/middle/portugues/index.htm";
+		}
+		else if (w > 800)
+		{
+   			window.location="netscape/high/portugues/index.htm";
+		}
+	}
+}
+function english()
+{
+	if (browser_name == "Microsoft Internet Explorer" && browser_version >= 4.0)
+	{
+		window.location="english/index.htm";
+	}
+	if (browser_name == "Netscape" && browser_version >= 4.0)
+	{
+		var tools=java.awt.Toolkit.getDefaultToolkit();
+		var size=tools.getScreenSize();
+		w=size.width;
+		if (w <= 640)
+		{
+			window.location="netscape/low/english/index.htm";
+		}
+		else if (w > 640 && w <= 800)
+		{
+			window.location="netscape/middle/english/index.htm";
+		}
+		else if (w > 800)
+		{
+   			window.location="netscape/high/english/index.htm";
+		}
+	}
+}
+</SCRIPT>
+<STYLE TYPE="text/css">
+A:link, A:visited, A:active { color: #003300; text-decoration: none}
+A:hover { color: #003300}
+</STYLE>
+<BODY BGCOLOR="#FFFFFF">
+<MAP NAME="index"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="movie.htm" ALT="Index"></MAP>
+<TABLE WIDTH="100%" HEIGHT="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD HEIGHT="20%">
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="60%" ALIGN="CENTER" VALIGN="MIDDLE">
+		<TABLE WIDTH="450" HEIGHT="80" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+			<TR>
+				<TD HEIGHT="35" COLSPAN="3" ALIGN="CENTER">
+				<IMG SRC="images/lg_simb.gif" WIDTH=40 HEIGHT=35 BORDER=0 USEMAP="#index"><BR>
+				</TD>
+			</TR>
+			<TR>
+				<TD WIDTH="120" HEIGHT="30" ALIGN="RIGHT">
+				</TD>
+				<TD WIDTH="210">
+				<IMG SRC="images/lg_tipo.gif" WIDTH=210 HEIGHT=30 BORDER=0 USEMAP="#port"><MAP NAME="port"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="javascript:portugues()"></MAP><BR>
+				</TD>
+				<TD WIDTH="120" ALIGN="RIGHT">
+				</TD>	
+			</TR>
+			<TR>
+				<TD HEIGHT="15" COLSPAN="3" ALIGN="CENTER">
+				<IMG SRC="images/lg_slog.gif" WIDTH=110 HEIGHT=15 BORDER=0 USEMAP="#index"><BR>
+				</TD>
+			</TR>
+		</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="20%" ALIGN="CENTER" VALIGN="BOTTOM">
+		<FONT FACE="Verdana,Arial" SIZE="-2">
+		<A TITLE="" STYLE="cursor:default">
+		Rua Lysímaco Ferreira da Costa, 80 . CEP 80050 100 . Centro Cívico . Curitiba . Paraná . Brasil<BR>
+		Tel: 55 (41) 254 8466 . Fax: 55 (41) 352 2199 . E-Mail:</A> <A HREF="mailto:hapnerkroetz@hapnerkroetz.com.br" TITLE="E-Mail">hapnerkroetz@hapnerkroetz.com.br</A><BR><BR>
+		</FONT>
+		</TD>
+	</TR>
+</TABLE>
+</BODY>
+</HTML>

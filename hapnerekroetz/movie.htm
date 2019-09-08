@@ -1,0 +1,68 @@
+<HTML><HEAD><TITLE>Hapner & Kroetz - Advogados</TITLE></HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+browser_name = navigator.appName;
+browser_version = parseFloat(navigator.appVersion);
+function Portugues()
+{
+	if (browser_name == "Microsoft Internet Explorer" && browser_version >= 4.0)
+	{
+		window.location="portugues/index.htm";
+	}
+	if (browser_name == "Netscape" && browser_version >= 4.0)
+	{
+		var tools=java.awt.Toolkit.getDefaultToolkit();
+		var size=tools.getScreenSize();
+		w=size.width;
+		if (w <= 640)
+		{
+			window.location="netscape/low/portugues/index.htm";
+		}
+		else if (w > 640 && w <= 800)
+		{
+			window.location="netscape/middle/portugues/index.htm";
+		}
+		else if (w > 800)
+		{
+   			window.location="netscape/high/portugues/index.htm";
+		}
+	}
+}
+function English()
+{
+	if (browser_name == "Microsoft Internet Explorer" && browser_version >= 4.0)
+	{
+		window.location="english/index.htm";
+	}
+	if (browser_name == "Netscape" && browser_version >= 4.0)
+	{
+		var tools=java.awt.Toolkit.getDefaultToolkit();
+		var size=tools.getScreenSize();
+		w=size.width;
+		if (w <= 640)
+		{
+			window.location="netscape/low/english/index.htm";
+		}
+		else if (w > 640 && w <= 800)
+		{
+			window.location="netscape/middle/english/index.htm";
+		}
+		else if (w > 800)
+		{
+   			window.location="netscape/high/english/index.htm";
+		}
+	}
+}
+</SCRIPT>
+<BODY BGCOLOR="#FFFFFF">
+<OBJECT CLASSID="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" CODEBASE="http://active.macromedia.com/flash2/cabs/swflash.cab#version=3,0,0,0" WIDTH="100%" HEIGHT="100%" ID="movie">
+<PARAM NAME="Type" VALUE="application/x-shockwave-flash">
+<PARAM NAME="Movie" VALUE="movie.swf">
+<PARAM NAME="Play" VALUE="True">
+<PARAM NAME="Quality" VALUE="Best">
+<PARAM NAME="Loop" VALUE="False">
+<PARAM NAME="Scale" VALUE="NoBorder">
+<PARAM NAME="Menu" VALUE="True">
+<EMBED SRC="movie.swf" SWLIVECONNECT="True" WIDTH="100%" HEIGHT="100%" QUALITY="High" LOOP="False" SCALE="NoBorder" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+</OBJECT>
+</BODY>
+</HTML>

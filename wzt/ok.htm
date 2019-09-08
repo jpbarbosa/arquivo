@@ -1,0 +1,272 @@
+<HTML><HEAD><TITLE>WZT Transportes de Conveniência</TITLE></HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+browser_name = navigator.appName;
+function Status(source,image,sourcex,imagex)
+{
+	if (browser_name == "Microsoft Internet Explorer")
+	{
+		document.images[source].src = "images/"+image + ".gif";
+		document.images[sourcex].src = "images/"+imagex + ".gif";
+	}
+	else
+	{
+		document.layers['Layer1'].document.images[source].src = "images/"+image + ".gif";
+		document.layers['Layer1'].document.images[sourcex].src = "images/"+imagex + ".gif";
+	}
+}
+function OnLine()
+{
+	if (browser_name == "Microsoft Internet Explorer")
+	{
+		document.location = "5-0-wzt_on-line.htm";
+	}
+	else
+	{
+		document.location = "5-0-wzt_on-line_netscape.htm";
+	}
+}
+</SCRIPT>
+<BODY BACKGROUND="images/bg-1.jpg" BGPROPERTIES="FIXED">
+<MAP NAME="index"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="index.htm"></MAP>
+<MAP NAME="bt-1"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="1-0-a_empresa.htm" ONMOUSEOVER="Status('bt-t-1','bt-1-1','bt-b-1','bt-1-1')" ONMOUSEOUT="Status('bt-t-1','bt-1-0','bt-b-1','bt-1-0')"></MAP>
+<MAP NAME="bt-2"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="2-0-servicos.htm" ONMOUSEOVER="Status('bt-t-2','bt-2-1','bt-b-2','bt-2-1')" ONMOUSEOUT="Status('bt-t-2','bt-2-0','bt-b-2','bt-2-0')"></MAP>
+<MAP NAME="bt-3"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="#"></MAP>
+<MAP NAME="bt-4"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="4-0-faq.htm" ONMOUSEOVER="Status('bt-t-4','bt-4-1','bt-b-4','bt-4-1')" ONMOUSEOUT="Status('bt-t-4','bt-4-0','bt-b-4','bt-4-0')"></MAP>
+<MAP NAME="bt-5"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="javascript:OnLine()"></MAP>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+function doThisCommandEveryIntervalMS(command, interval)
+{
+	setInterval(eval('"' + command + '"'), interval);
+}
+function getWindowWidth()
+{
+	return window.innerWidth
+}
+function getWindowHeight()
+{
+	return window.innerHeight
+}
+function getPageScrollLeft()
+{
+	return window.pageXOffset
+}
+function getPageScrollTop()
+{
+	return window.pageYOffset
+}
+function setPosFromLeft(xCoord)
+{
+	eval("document.bg").left = xCoord
+}
+function setPosFromTop(yCoord)
+{
+	eval("document.bg").top = yCoord
+}
+function makeLinkedImage()
+{
+	document.write(
+	'<A HREF="', "", '"><STYLE TYPE="text/css"> #bg {position:absolute; z-index:1}</STYLE><DIV ID="bg"><IMG SRC="images/bg-1.jpg"></DIV>');
+}
+// '
+</SCRIPT>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+var windowWidth=0;
+var windowHeight=0;
+var pageScrollLeft=0;
+var pageScrollTop=0;
+function waterMark()
+{
+	if (navigator.appVersion.indexOf("Mac") == -1 && navigator.appName.indexOf("Microsoft Internet Explorer") == -1)
+	{
+		oldWindowWidth = windowWidth;
+		oldWindowHeight = windowHeight;
+		oldPageScrollLeft = pageScrollLeft;
+		oldPageScrollTop = pageScrollTop;
+		windowWidth = getWindowWidth();
+		windowHeight = getWindowHeight();
+		pageScrollLeft = getPageScrollLeft();
+		pageScrollTop = getPageScrollTop();
+		if ((windowHeight != oldWindowHeight)||(windowWidth != oldWindowWidth)||(pageScrollLeft != oldPageScrollLeft)||(pageScrollTop != oldPageScrollTop))
+		{
+			setPosFromTop(pageScrollTop);
+			setPosFromLeft(pageScrollLeft);
+		}
+	}
+}
+if (navigator.appVersion.indexOf("Mac") == -1 && navigator.appName.indexOf("Microsoft Internet Explorer") == -1)
+{
+	makeLinkedImage();
+	doThisCommandEveryIntervalMS("waterMark()", 100);
+}
+</SCRIPT>
+<DIV ID="Layer1" STYLE="position:absolute; left:0px; top:0px; z-index:2">
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+	<TD>
+	<IMG SRC="images/lg-1.gif" WIDTH=200 HEIGHT=85 BORDER=0 ALT="" USEMAP="#index"><BR>
+	</TD>
+	<TD ALIGN="RIGHT" VALIGN="TOP">
+	<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=25><BR>
+	<IMG SRC="images/bt-0-3.gif" WIDTH=10 HEIGHT=6><BR>
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=14><BR>
+	</TD>
+	<TD VALIGN="TOP">
+	<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD COLSPAN="10" BGCOLOR="#999999">
+		<IMG SRC="images/lg-2.gif" WIDTH=193 HEIGHT=15 BORDER=0 ALT=""><BR>
+		</TD>
+		<TD BGCOLOR="#333333">
+		<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=1><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="10" COLSPAN="11">
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-1-0.gif" WIDTH=89 HEIGHT=20 BORDER=0 NAME="bt-t-1" ALT="" USEMAP="#bt-1"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20 BORDER=0 ALT=""><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-2-0.gif" WIDTH=79 HEIGHT=20 BORDER=0 NAME="bt-t-2" ALT="" USEMAP="#bt-2"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20 BORDER=0 ALT=""><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-3-0.gif" WIDTH=77 HEIGHT=20 BORDER=0 NAME="bt-t-3" ALT="" USEMAP="#bt-3"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20 BORDER=0 ALT=""><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-4-0.gif" WIDTH=55 HEIGHT=20 BORDER=0 NAME="bt-t-4" ALT="" USEMAP="#bt-4"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-1.gif" WIDTH=1 HEIGHT=20 BORDER=0 ALT=""><BR>
+		</TD>
+		<TD>
+		<IMG SRC="images/bt-5-2.gif" WIDTH=95 HEIGHT=25 BORDER=0 ALT="" USEMAP="#bt-5"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=6 BORDER=0><BR>
+		</TD>
+		<TD>
+		</TD>
+	</TR>
+	</TABLE>
+	</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH="620" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+	<TD HEIGHT="10" COLSPAN="5">
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="20" ALIGN="RIGHT">
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=499><IMG SRC="images/xtr-1.gif" WIDTH=1 HEIGHT=499><BR>
+	</TD>
+	<TD WIDTH="20">
+	<IMG SRC="images/xtr-0.gif" WIDTH=20 HEIGHT=499><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=498><IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=498><BR>
+	</TD>
+	<TD WIDTH="540" VALIGN="TOP" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=540 HEIGHT=1><BR>
+	<FONT FACE="Arial" SIZE="-1" COLOR="#111111">
+	<BR>
+	<FONT SIZE="" COLOR="#006699"><B>Formulário Enviado</B></FONT><BR><BR>
+	Ok.<BR><BR><BR>
+	</FONT>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=498><IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=498><BR>
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="20" ALIGN="RIGHT">
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=1><IMG SRC="images/xtr-1.gif" WIDTH=1 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="20">
+	<IMG SRC="images/xtr-0.gif" WIDTH=20 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="540" VALIGN="TOP" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=540 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	</TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+	<TD>
+	<IMG SRC="images/xtr-2.gif" WIDTH=20 HEIGHT=80 BORDER=0 ALT=""><BR>
+	</TD>
+	<TD>
+	<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=1><BR>
+	</TD>
+	<TD VALIGN="BOTTOM">
+	<IMG SRC="images/lg-3.gif" WIDTH=170 HEIGHT=35 BORDER=0 ALT="" USEMAP="#index"><BR>
+	</TD>
+	<TD ALIGN="RIGHT" VALIGN="BOTTOM">
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=14><BR>
+	<IMG SRC="images/bt-0-3.gif" WIDTH=10 HEIGHT=6><BR>
+	<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=10><BR>
+	</TD>
+	<TD VALIGN="BOTTOM">
+	<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-1-0.gif" WIDTH=89 HEIGHT=20 BORDER=0 NAME="bt-b-1" ALT="" USEMAP="#bt-1"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20 BORDER=0 ALT=""><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-2-0.gif" WIDTH=79 HEIGHT=20 BORDER=0 NAME="bt-b-2" ALT="" USEMAP="#bt-2"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20 BORDER=0 ALT=""><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-3-0.gif" WIDTH=77 HEIGHT=20 BORDER=0 NAME="bt-b-3" ALT="" USEMAP="#bt-3"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20 BORDER=0 ALT=""><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-4-0.gif" WIDTH=55 HEIGHT=20 BORDER=0 NAME="bt-b-4" ALT="" USEMAP="#bt-4"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-2.gif" WIDTH=1 HEIGHT=20 BORDER=0 ALT=""><BR>
+		</TD>
+		<TD>
+		<IMG SRC="images/bt-5-3.gif" WIDTH=95 HEIGHT=25 BORDER=0 ALT="" USEMAP="#bt-5"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=6 BORDER=0 ALT=""><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="10" COLSPAN="10">
+		</TD>
+	</TR>
+	</TABLE>
+	</TD>
+</TR>
+</TABLE>
+</DIV>
+</BODY>
+</HTML>

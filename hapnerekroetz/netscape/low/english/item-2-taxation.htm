@@ -1,0 +1,184 @@
+<HTML><HEAD><TITLE>Hapner & Kroetz - Advogados</TITLE></HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+function StatusLayer0(source,image)
+{
+	document.layers['Layer0'].document.images[source].src = "../../../english/images/"+image + ".gif";
+}
+function StatusLayer1(source,image)
+{
+	document.layers['Layer1'].document.images[source].src = "../../../english/images/"+image + ".gif";
+}
+function StatusLayer2(source,image)
+{
+	document.layers['Layer2'].document.images[source].src = "../../../english/images/"+image + ".gif";
+}
+function StatusLayer3(source,image)
+{
+	document.layers['Layer3'].document.images[source].src = "../../../english/images/"+image + ".gif";
+}
+function StatusLayer4(source,image)
+{
+	document.layers['Layer4'].document.images[source].src = "../../../english/images/"+image + ".gif";
+}
+function ShowHideLayer() 
+{
+	var i, visStr, args, theObj;
+	args = ShowHideLayer.arguments;
+	for (i=0; i<(args.length-2); i+=3)
+	{
+    	visStr   = args[i+2];
+    	if (navigator.appName == 'Netscape' && document.layers != null)
+		{
+      		theObj = eval(args[i]);
+      		if (theObj) theObj.visibility = visStr;
+		}
+		else if (document.all != null)
+		{
+			if (visStr == 'show') visStr = 'visible';
+			if (visStr == 'hide') visStr = 'hidden';
+			theObj = eval(args[i+1]);
+			if (theObj) theObj.style.visibility = visStr;
+		}
+	}
+}
+function ShowLayer1()
+{
+	ShowHideLayer('document.layers[\'Layer1\']','document.all[\'Layer1\']','show');
+	StatusLayer0('but1','but-1-1');
+}
+function HideLayer1()
+{
+	ShowHideLayer('document.layers[\'Layer1\']','document.all[\'Layer1\']','hide');
+	StatusLayer0('but1','but-1-0');
+}
+function ShowLayer2()
+{
+	ShowHideLayer('document.layers[\'Layer2\']','document.all[\'Layer2\']','show');
+	StatusLayer0('but2','but-2-1');
+}
+function HideLayer2()
+{
+	ShowHideLayer('document.layers[\'Layer2\']','document.all[\'Layer2\']','hide');
+	StatusLayer0('but2','but-2-0');
+}
+function ShowLayer3()
+{
+	ShowHideLayer('document.layers[\'Layer3\']','document.all[\'Layer3\']','show');
+	StatusLayer0('but3','but-3-1');
+}
+function HideLayer3()
+{
+	ShowHideLayer('document.layers[\'Layer3\']','document.all[\'Layer3\']','hide');
+	StatusLayer0('but3','but-3-0');
+}
+function ShowLayer4()
+{
+	ShowHideLayer('document.layers[\'Layer4\']','document.all[\'Layer4\']','show');
+	StatusLayer0('but4','but-4-1');
+}
+function HideLayer4()
+{
+	ShowHideLayer('document.layers[\'Layer4\']','document.all[\'Layer4\']','hide');
+	StatusLayer0('but4','but-4-0');
+}
+function HideLayer()
+{
+	ShowHideLayer('document.layers[\'Layer1\']','document.all[\'Layer1\']','hide');
+	ShowHideLayer('document.layers[\'Layer2\']','document.all[\'Layer2\']','hide');
+	ShowHideLayer('document.layers[\'Layer3\']','document.all[\'Layer3\']','hide');
+	ShowHideLayer('document.layers[\'Layer4\']','document.all[\'Layer4\']','hide');
+	StatusLayer0('but1','but-1-0');
+	StatusLayer0('but2','but-2-0');
+	StatusLayer0('but3','but-3-0');
+	StatusLayer0('but4','but-4-0');
+}
+function creditos()
+{
+	window.open('../../../creditos.htm', 'creditos', 'width=200,height=150,left=295,top=235')
+}
+</SCRIPT>
+<STYLE TYPE="text/css">
+A:link, A:visited, A:active { color: #003300; text-decoration: none}
+A:hover { color: #003300}
+</STYLE>
+<BODY BACKGROUND="../images/background.gif">
+<MAP NAME="index"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="../index.htm" TARGET="_top" ONMOUSEOVER="HideLayer()"></MAP>
+<MAP NAME="hide"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="#" ONMOUSEOVER="HideLayer()"></MAP>
+<LAYER ID="Texto" LEFT="0" TOP="90" Z-INDEX="0">
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD HEIGHT="10" ALIGN="CENTER" COLSPAN="5">
+		<TABLE WIDTH="602" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+			<TR>
+				<TD>
+				<IMG SRC="../../../english/images/item-2-taxation.gif" WIDTH=178 HEIGHT=10 BORDER=0><BR>
+				</TD>
+				<TD VALIGN="top">
+				<IMG SRC="../../../images/xtra-4.gif" WIDTH=423 HEIGHT=9 BORDER=0><IMG SRC="../../../images/xtra-5.gif" WIDTH=1 HEIGHT=9 BORDER=0><BR>
+				</TD>			
+			</TR>
+		</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD HEIGHT="2" ALIGN="CENTER" COLSPAN="5">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=2 BORDER=0><IMG SRC="../../../images/xtra-6.gif" WIDTH=600 HEIGHT=1 BORDER=0 ALIGN="TOP"><IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=2 BORDER=0><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD WIDTH="2">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=20 BORDER=0><BR>
+		</TD>
+		<TD COLSPAN="3" BACKGROUND="../../../images/bg-desenv.gif"><BR></TD>
+		<TD WIDTH="2" ALIGN="RIGHT">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=20 BORDER=0><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD WIDTH="2">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=480 BORDER=0><BR>
+		</TD>
+		<TD WIDTH="20" BACKGROUND="../../../images/bg-desenv.gif"><BR></TD>
+		<TD WIDTH="550" VALIGN="TOP" BACKGROUND="../../../images/bg-desenv.gif">
+		<FONT FACE="Verdana,Arial,Helvetica" SIZE="-1">
+		<B>TAXATION</B><BR><BR>
+
+		The taxation practice encompasses all areas of federal, state, local and international taxation and includes corporate taxation, partnership taxation, state and trust taxation, employee benefits, executive compensation, international tax planning, tax-exempt financing and tax controversy matters.<BR><BR>
+
+		The group serves a broad range of clients from publicly held companies to small privately held corporations, public and private partnerships, individuals, estates and trusts with the objective to work closely with clients to assist them in minimizing their federal, state and other taxes.<BR><BR>
+
+		The taxation section has developed strengths in tax planning for corporations and partnerships with a special emphasis on innovative means of structuring and restructuring business organizations through public and private securities financing; bankruptcy and insolvency transactions; organizing master limited partnerships; restructuring and reorganizing partnership and corporate capital and debt structures; mergers and acquisitions of public and privately held corporations; leveraged buy-outs; going private transactions; structuring and restructuring of real estate entities; acquisitions and dispositions of real estate held by individuals, partnerships and corporations; and recapitalization.<BR><BR>
+
+		The group also offers special planning expertise in the areas of executive compensation, employee benefits, real estate planning and personal taxation. <IMG SRC="../../../images/lg_mini.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALIGN="TOP" USEMAP="#top"><MAP NAME="top"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="#top"></MAP><BR><BR>
+		</FONT>
+		</TD>
+		<TD WIDTH="28" BACKGROUND="../../../images/bg-desenv.gif"><BR></TD>
+		<TD WIDTH="2" ALIGN="RIGHT">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=480 BORDER=0><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD HEIGHT="2" ALIGN="CENTER" COLSPAN="5">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=2 BORDER=0><IMG SRC="../../../images/xtra-6.gif" WIDTH=600 HEIGHT=1 BORDER=0 ALIGN="BOTTOM"><IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=2 BORDER=0><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="9" VALIGN="BOTTOM" COLSPAN="6">
+		<IMG SRC="../../../images/xtra-9.gif" WIDTH=90 HEIGHT=8 BORDER=0 USEMAP="#creditos"><MAP NAME="creditos"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="javascript:creditos()"></MAP><BR>
+		</TD>
+	</TR>
+</TABLE>
+</LAYER>
+<LAYER ID="Layer0" LEFT="0" TOP="0" Z-INDEX="0" SRC="layer-0.htm"></LAYER>
+<LAYER ID="Layer1" LEFT="0" TOP="30" Z-INDEX="1" SRC="layer-1.htm" VISIBILITY="HIDE"></LAYER>
+<LAYER ID="Layer2" LEFT="84" TOP="30" Z-INDEX="1" SRC="layer-2.htm" VISIBILITY="HIDE"></LAYER>
+<LAYER ID="Layer3" LEFT="414" TOP="30" Z-INDEX="1" SRC="layer-3.htm" VISIBILITY="HIDE"></LAYER>
+<LAYER ID="Layer4" LEFT="513" TOP="30" Z-INDEX="1" SRC="layer-4.htm" VISIBILITY="HIDE"></LAYER>
+<LAYER ID="Layer5" LEFT="512" TOP="0" Z-INDEX="1" SRC="layer-5.htm"></LAYER>
+</BODY>
+</HTML>

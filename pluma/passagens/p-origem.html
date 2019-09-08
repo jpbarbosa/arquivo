@@ -1,0 +1,51 @@
+<HTML>
+<HEAD><TITLE>PLUMA - Passagens - Desk - Origem</TITLE></HEAD>
+<script language="javascript">
+/* Funcao script para escolha da pagina destino */
+function TrocaDestino()
+{
+        /* Pega a escolha */
+        aEsc = eval(document.MENU1.ORIGEM1.selectedIndex)
+
+        if (aEsc == 0) {
+                parent.frames[1].location = "p-destino.html"
+        } else if (aEsc < 10) {
+                parent.frames[1].location = "p-d0"+document.MENU1.ORIGEM1.selectedIndex+".html"
+        } else {
+                parent.frames[1].location = "p-d"+document.MENU1.ORIGEM1.selectedIndex+".html"
+        }
+}
+</script>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#FFFFFF" LINK="#FFFFFF" VLINK="#800000" ALINK="#800000" BACKGROUND="pas1.jpg" LEFTMARGIN=50>
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH="100%" HEIGHT="100%">
+<TR><TD>
+<FORM NAME="MENU1">
+<SELECT NAME="ORIGEM1" onChange='TrocaDestino()'>
+<OPTION SELECTED>Escolha Origem&nbsp;
+<OPTION>Araranguá 
+<OPTION>Assunção
+<OPTION>Buenos Aires
+<OPTION>Camboriú
+<OPTION>Cascavel
+<OPTION>Criciuma
+<OPTION>Curitiba
+<OPTION>Florianópolis
+<OPTION>Foz do Iguaçu
+<OPTION>Joinville
+<OPTION>Juíz de Fora
+<OPTION>Niterói
+<OPTION>Paranaguá
+<OPTION>Ponta Grossa
+<OPTION>Porto Alegre
+<OPTION>Rio de Janeiro
+<OPTION>Santa Maria
+<OPTION>Santiago do C.
+<OPTION>Santos
+<OPTION>São Paulo
+<OPTION>Uruguaiana
+</SELECT>
+</FORM>
+</TD></TR></TABLE>
+</BODY>
+</HTML>

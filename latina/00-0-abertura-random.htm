@@ -1,0 +1,28 @@
+<HTML><HEAD><TITLE>LATINA - Concessionário IVECO-FIAT</TITLE>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+
+var howMany = 4;
+var page = new Array(howMany+1);
+
+page[0]="00-0-abertura-furgao.htm";
+page[1]="00-0-abertura-trakker.htm";
+page[2]="00-0-abertura-furgao.htm";
+page[3]="00-0-abertura-trakker.htm";
+page[4]="00-0-abertura-trakker.htm";
+
+function rndnumber()
+{
+	var randscript = -1;
+	while (randscript < 0 || randscript > howMany || isNaN(randscript))
+	{
+		randscript = parseInt(Math.random()*(howMany+1));
+	}
+	return randscript;
+}
+quo = rndnumber();
+quox = page[quo];
+window.location=(quox);
+
+</SCRIPT>
+</HEAD>
+</HTML>

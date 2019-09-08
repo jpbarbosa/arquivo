@@ -1,0 +1,321 @@
+<HTML><HEAD><TITLE>Hapner & Kroetz - Advogados</TITLE></HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+{
+	up1 = new Image();
+	up1.src = "images/scr-up-1.gif";
+	dw1 = new Image();
+	dw1.src = "images/scr-dw-1.gif";
+	but11 = new Image();
+	but11.src = "images/but-1-1.gif";
+	but21 = new Image();
+	but21.src = "images/but-2-1.gif";
+	but31 = new Image();
+	but31.src = "images/but-3-1.gif";
+	but41 = new Image();
+	but41.src = "images/but-4-1.gif";
+	but101 = new Image();
+	but101.src = "images/but-1-01-1.gif";
+	but102 = new Image();
+	but102.src = "images/but-1-02-1.gif";
+	but103 = new Image();
+	but103.src = "images/but-1-03-1.gif";
+	but104 = new Image();
+	but104.src = "images/but-1-04-1.gif";
+	but201 = new Image();
+	but201.src = "images/but-2-01-1.gif";
+	but202 = new Image();
+	but202.src = "images/but-2-02-1.gif";
+	but203 = new Image();
+	but203.src = "images/but-2-03-1.gif";
+	but204 = new Image();
+	but204.src = "images/but-2-04-1.gif";
+	but205 = new Image();
+	but205.src = "images/but-2-05-1.gif";
+	but206 = new Image();
+	but206.src = "images/but-2-06-1.gif";
+	but207 = new Image();
+	but207.src = "images/but-2-07-1.gif";
+	but208 = new Image();
+	but208.src = "images/but-2-08-1.gif";
+	but209 = new Image();
+	but209.src = "images/but-2-09-1.gif";
+	but210 = new Image();
+	but210.src = "images/but-2-10-1.gif";
+	but211 = new Image();
+	but211.src = "images/but-2-11-1.gif";
+	but212 = new Image();
+	but212.src = "images/but-2-12-1.gif";
+	but213 = new Image();
+	but213.src = "images/but-2-13-1.gif";
+	but301 = new Image();
+	but301.src = "images/but-3-01-1.gif";
+	but302 = new Image();
+	but302.src = "images/but-3-02-1.gif";
+	but401 = new Image();
+	but401.src = "images/but-4-01-1.gif";
+	item101 = new Image();
+	item101.scr = "images/item-1-presentation.gif";
+	item102 = new Image();
+	item102.src = "images/item-1-history.gif";
+	item103 = new Image();
+	item103.scr = "images/item-1-clients.gif";
+	item104 = new Image();
+	item104.src = "images/item-1-contacts.gif";
+	item201 = new Image();
+	item201.scr = "images/item-1-public_administration.gif";
+	item202 = new Image();
+	item202.src = "images/item-1-banking.gif";
+	item203 = new Image();
+	item203.scr = "images/item-1-consumer.gif";
+	item204 = new Image();
+	item204.src = "images/item-1-contencioso.gif";
+	item205 = new Image();
+	item205.scr = "images/item-1-contrato.gif";
+	item206 = new Image();
+	item206.src = "images/item-1-crime.gif";
+	item207 = new Image();
+	item207.scr = "images/item-1-direito_economico.gif";
+	item208 = new Image();
+	item208.src = "images/item-1-international.gif";
+	item209 = new Image();
+	item209.scr = "images/item-1-bankruptcy.gif";
+	item210 = new Image();
+	item210.src = "images/item-1-meio_ambiente.gif";
+	item211 = new Image();
+	item211.scr = "images/item-1-publicidade.gif";
+	item212 = new Image();
+	item212.src = "images/item-1-sociedades_comerciais.gif";
+	item213 = new Image();
+	item213.scr = "images/item-1-trabalho.gif";
+	item214 = new Image();
+	item214.src = "images/item-1-presentation.gif";
+	item301 = new Image();
+	item301.src = "images/item-1-curriculuns.gif";
+	item302 = new Image();
+	item302.scr = "images/item-1-trabalho.gif";
+	item401 = new Image();
+	item401.src = "images/item-1-august99.gif";
+}
+function Status(source,image)
+{
+	document.images[source].src = "images/"+image + ".gif";
+}
+function ShowHideLayer() 
+{
+	var i, visStr, args, theObj;
+	args = ShowHideLayer.arguments;
+	for (i=0; i<(args.length-2); i+=3)
+	{
+    	visStr   = args[i+2];
+    	if (navigator.appName == 'Netscape' && document.layers != null)
+		{
+      		theObj = eval(args[i]);
+      		if (theObj) theObj.visibility = visStr;
+		}
+		else if (document.all != null)
+		{
+			if (visStr == 'show') visStr = 'visible';
+			if (visStr == 'hide') visStr = 'hidden';
+			theObj = eval(args[i+1]);
+			if (theObj) theObj.style.visibility = visStr;
+		}
+	}
+}
+function ShowLayer1()
+{
+	parent.frames[3].ShowLayer1();
+	parent.frames[4].ShowLayer1();
+	ShowHideLayer('document.layers[\'Layer1\']','document.all[\'Layer1\']','show');
+	Status('but1','but-1-1');
+}
+function HideLayer1()
+{
+	parent.frames[3].HideLayer1();
+	parent.frames[4].HideLayer1();
+	ShowHideLayer('document.layers[\'Layer1\']','document.all[\'Layer1\']','hide');
+	Status('but1','but-1-0');
+}
+function ShowLayer2()
+{
+	parent.frames[4].ShowLayer2();
+	ShowHideLayer('document.layers[\'Layer2\']','document.all[\'Layer2\']','show');
+	Status('but2','but-2-1');
+}
+function HideLayer2()
+{
+	parent.frames[4].HideLayer2();
+	ShowHideLayer('document.layers[\'Layer2\']','document.all[\'Layer2\']','hide');
+	Status('but2','but-2-0');
+}
+function ShowLayer3()
+{
+	parent.frames[4].ShowLayer3();
+	ShowHideLayer('document.layers[\'Layer3\']','document.all[\'Layer3\']','show');
+	Status('but3','but-3-1');
+}
+function HideLayer3()
+{
+	parent.frames[4].HideLayer3();
+	ShowHideLayer('document.layers[\'Layer3\']','document.all[\'Layer3\']','hide');
+	Status('but3','but-3-0');
+}
+function ShowLayer4()
+{
+	ShowHideLayer('document.layers[\'Layer4\']','document.all[\'Layer4\']','show');
+	Status('but4','but-4-1');
+}
+function HideLayer4()
+{
+	ShowHideLayer('document.layers[\'Layer4\']','document.all[\'Layer4\']','hide');
+	Status('but4','but-4-0');
+}
+function HideLayer()
+{
+	parent.frames[3].HideLayer1();
+	parent.frames[4].HideLayer1();
+	parent.frames[4].HideLayer1();
+	parent.frames[4].HideLayer2();
+	parent.frames[4].HideLayer3();
+	ShowHideLayer('document.layers[\'Layer1\']','document.all[\'Layer1\']','hide');
+	ShowHideLayer('document.layers[\'Layer2\']','document.all[\'Layer2\']','hide');
+	ShowHideLayer('document.layers[\'Layer3\']','document.all[\'Layer3\']','hide');
+	ShowHideLayer('document.layers[\'Layer4\']','document.all[\'Layer4\']','hide');
+	Status('but1','but-1-0');
+	Status('but2','but-2-0');
+	Status('but3','but-3-0');
+	Status('but4','but-4-0');
+}
+</SCRIPT>
+<STYLE TYPE="text/css">
+A:link, A:visited, A:active { color: #003300; text-decoration: none}
+A:hover { color: #003300}
+</STYLE>
+<BODY BACKGROUND="../images/bg-menu.gif">
+<MAP NAME="index"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="../index.htm" TARGET="_top" ALT="Index" ONMOUSEOVER="HideLayer()"></MAP>
+<MAP NAME="hide"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" ALT="" ONMOUSEOVER="HideLayer()"></MAP>
+<TABLE WIDTH="636" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD WIDTH="213" HEIGHT="45">
+		</TD>
+		<TD WIDTH="210" ALIGN="CENTER" VALIGN="BOTTOM">
+		<IMG SRC="../images/lg_simb.gif" WIDTH=40 HEIGHT=35 BORDER=0 USEMAP="#index"><BR>
+		</TD>
+		<TD WIDTH="213" ALIGN="RIGHT" VALIGN="TOP">
+		<IMG SRC="../images/xtra-8-port.gif" WIDTH=108 HEIGHT=10 BORDER=0 USEMAP="#port" ALT=""><MAP NAME="port"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="../portugues/index.htm" TARGET="_top" ALT="Versão Português"></MAP><BR>
+		</TD>	
+	</TR>
+	<TR>
+		<TD WIDTH="213" HEIGHT="30" ALIGN="RIGHT">
+		<IMG SRC="images/but-1-0.gif" WIDTH=104 HEIGHT=30 BORDER=0 NAME="but1" USEMAP="#but1"><MAP NAME="but1"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" ALT="About Us" ONMOUSEOVER="ShowLayer1();HideLayer2();HideLayer3();HideLayer4()"></MAP><IMG SRC="images/but-2-0.gif" WIDTH=109 HEIGHT=30 BORDER=0 NAME="but2" USEMAP="#but2"><MAP NAME="but2"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" ALT="Services" ONMOUSEOVER="HideLayer1();ShowLayer2();HideLayer3();HideLayer4()"></MAP><BR>
+		</TD>
+		<TD WIDTH="210">
+		<IMG SRC="../images/lg_tipo.gif" WIDTH=210 HEIGHT=30 BORDER=0 USEMAP="#index"><BR>
+		</TD>
+		<TD WIDTH="213" ALIGN="RIGHT">
+		<IMG SRC="images/but-3-0.gif" WIDTH=109 HEIGHT=30 BORDER=0 NAME="but3" USEMAP="#but3"><MAP NAME="but3"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" ALT="Members" ONMOUSEOVER="HideLayer1();HideLayer2();ShowLayer3();HideLayer4()"></MAP><IMG SRC="images/but-4-0.gif" WIDTH=104 HEIGHT=30 BORDER=0 NAME="but4" USEMAP="#but4"><MAP NAME="but4"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" ALT="News" ONMOUSEOVER="HideLayer1();HideLayer2();HideLayer3();ShowLayer4()"></MAP><BR>
+		</TD>	
+	</TR>
+	<TR>
+		<TD HEIGHT="15" COLSPAN="3" ALIGN="CENTER">
+		<IMG SRC="../images/lg_slog.gif" WIDTH=110 HEIGHT=15 BORDER=0 USEMAP="#index"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="10" COLSPAN="3" ALIGN="CENTER">
+		<IMG SRC="images/item-1-presentation.gif" WIDTH=178 HEIGHT=10 BORDER=0 NAME="item" ALIGN="TOP"><IMG SRC="../images/xtra-4.gif" WIDTH=439 HEIGHT=9 BORDER=0><IMG SRC="../images/xtra-5.gif" WIDTH=1 HEIGHT=9 BORDER=0><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="2" COLSPAN="3" ALIGN="CENTER">
+		<IMG SRC="../images/xtra-6.gif" WIDTH=1 HEIGHT=2 BORDER=0><IMG SRC="../images/xtra-6.gif" WIDTH=616 HEIGHT=1 BORDER=0 ALIGN="TOP"><IMG SRC="../images/xtra-6.gif" WIDTH=1 HEIGHT=2 BORDER=0><BR>
+		</TD>
+	</TR>
+</TABLE>
+<DIV ID="Layer1" STYLE="position:absolute; left:0px; top:30px; width:123px; height:72px; z-index:1; visibility: hidden">
+<TABLE WIDTH="120" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD HEIGHT="40" VALIGN="TOP" COLSPAN="3">
+		<IMG SRC="../images/xtra-0.gif" WIDTH=123 HEIGHT=15 BORDER=0 ALT="" ONMOUSEOVER="HideLayer()"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="5">
+		<IMG SRC="../images/xtra-0.gif" WIDTH=5 HEIGHT=32 BORDER=0 ALT="" ONMOUSEOVER="HideLayer()"><BR>
+		</TD>
+		<TD WIDTH="98" BACKGROUND="../images/xtra-1.gif">
+		<IMG SRC="images/but-1-01-0.gif" WIDTH=98 HEIGHT=18 BORDER=0 NAME="but101" USEMAP="#but101"><MAP NAME="but101"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="item-1-presentation.htm" TARGET="desenv" ALT="Presentation" ONMOUSEOVER="Status('but101','but-1-01-1')" ONMOUSEOUT="Status('but101','but-1-01-0')" ONCLICK="Status('item','item-1-presentation')"></MAP><BR>
+		<IMG SRC="images/but-1-02-0.gif" WIDTH=98 HEIGHT=14 BORDER=0 NAME="but102" USEMAP="#but102"><MAP NAME="but102"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="item-1-history.htm" TARGET="desenv" ALT="History" ONMOUSEOVER="Status('but102','but-1-02-1')" ONMOUSEOUT="Status('but102','but-1-02-0')" ONCLICK="Status('item','item-1-history')"></MAP><BR>
+		<TD WIDTH="20">
+		<IMG SRC="../images/xtra-0.gif" WIDTH=20 HEIGHT=32 BORDER=0 ALT="" ONMOUSEOVER="HideLayer()"><BR>
+		</TD>
+	</TR>
+</TABLE>
+</DIV>
+<DIV ID="Layer2" STYLE="position:absolute; left:84px; top:30px; width:138px; height:72px; z-index:1; visibility: hidden">
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD HEIGHT="40" COLSPAN="3" VALIGN="TOP">
+		<IMG SRC="../images/xtra-0.gif" WIDTH=138 HEIGHT=15 BORDER=0 ALT="" ONMOUSEOVER="HideLayer()"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="20">
+		<IMG SRC="../images/xtra-0.gif" WIDTH=20 HEIGHT=32 BORDER=0 ALT="" ONMOUSEOVER="HideLayer()"><BR>
+		</TD>
+		<TD WIDTH="98" BACKGROUND="../images/xtra-1.gif">
+		<IMG SRC="images/but-2-01-0.gif" WIDTH=98 HEIGHT=18 BORDER=0 NAME="but201" USEMAP="#but201"><MAP NAME="but201"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="item-2-public_administration.htm" TARGET="desenv" ALT="Public Administration" ONMOUSEOVER="Status('but201','but-2-01-1')" ONMOUSEOUT="Status('but201','but-2-01-0')" ONCLICK="Status('item','item-2-public_administration')"></MAP><BR>
+		<IMG SRC="images/but-2-02-0.gif" WIDTH=98 HEIGHT=14 BORDER=0 NAME="but202" USEMAP="#but202"><MAP NAME="but202"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="item-2-banking.htm" TARGET="desenv" ALT="Banking" ONMOUSEOVER="Status('but202','but-2-02-1')" ONMOUSEOUT="Status('but202','but-2-02-0')" ONCLICK="Status('item','item-2-banking')"></MAP><BR>
+		</TD>
+		<TD WIDTH="20">
+		<IMG SRC="../images/xtra-0.gif" WIDTH=20 HEIGHT=32 BORDER=0 ALT="" ONMOUSEOVER="HideLayer()"><BR>
+		</TD>
+	</TR>
+</TABLE>
+</DIV>
+<DIV ID="Layer3" STYLE="position:absolute; left:415px; top:30px; width:138px; height:72px; z-index:1; visibility: hidden">
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD HEIGHT="40" COLSPAN="3" VALIGN="TOP">
+		<IMG SRC="../images/xtra-0.gif" WIDTH=138 HEIGHT=15 BORDER=0 ALT="" ONMOUSEOVER="HideLayer()"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="20">
+		<IMG SRC="../images/xtra-0.gif" WIDTH=20 HEIGHT=32 BORDER=0 ALT="" ONMOUSEOVER="HideLayer()"><BR>
+		</TD>
+		<TD WIDTH="98" BACKGROUND="../images/xtra-1.gif">
+		<IMG SRC="images/but-3-01-0.gif" WIDTH=98 HEIGHT=18 BORDER=0 NAME="but301" USEMAP="#but301"><MAP NAME="but301"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="item-3-presentation.htm" TARGET="desenv" ALT="Presentation" ONMOUSEOVER="Status('but301','but-3-01-1')" ONMOUSEOUT="Status('but301','but-3-01-0')" ONCLICK="Status('item','item-3-presentation');HideLayer()"></MAP><BR>
+		<IMG SRC="images/but-3-02-0.gif" WIDTH=98 HEIGHT=14 BORDER=0 NAME="but302" USEMAP="#but302"><MAP NAME="but302"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="item-3-curriculuns.htm" TARGET="desenv" ALT="Curriculuns" ONMOUSEOVER="Status('but302','but-3-02-1')" ONMOUSEOUT="Status('but302','but-3-02-0')" ONCLICK="Status('item','item-3-curriculuns')"></MAP><BR>
+		</TD>
+		<TD WIDTH="20">
+		<IMG SRC="../images/xtra-0.gif" WIDTH=20 HEIGHT=32 BORDER=0 ALT="" ONMOUSEOVER="HideLayer()"><BR>
+		</TD>
+	</TR>
+</TABLE>
+</DIV>
+<DIV ID="Layer4" STYLE="position:absolute; left:528px; top:30px; width:123px; height:72px; z-index:1; visibility: hidden">
+<TABLE WIDTH="120" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD HEIGHT="40" VALIGN="TOP" COLSPAN="3">
+		<IMG SRC="../images/xtra-0.gif" WIDTH=123 HEIGHT=15 BORDER=0 ALT="" ONMOUSEOVER="HideLayer()"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="20">
+		<IMG SRC="../images/xtra-0.gif" WIDTH=5 HEIGHT=21 BORDER=0 ALT="" ONMOUSEOVER="HideLayer()"><BR>
+		</TD>
+		<TD WIDTH="98" BACKGROUND="../images/xtra-1.gif">
+		<IMG SRC="images/but-4-01-0.gif" WIDTH=98 HEIGHT=21 BORDER=0 NAME="but401" USEMAP="#but401"><MAP NAME="but401"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="item-4-august99.htm" TARGET="desenv" ALT="August 1999" ONMOUSEOVER="Status('but401','but-4-01-1')" ONMOUSEOUT="Status('but401','but-4-01-0')" ONCLICK="Status('item','item-4-august99')"></MAP><BR>
+		<TD WIDTH="5">
+		<IMG SRC="../images/xtra-0.gif" WIDTH=20 HEIGHT=21 BORDER=0 ALT="" ONMOUSEOVER="HideLayer()"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN="3">
+		<IMG SRC="../images/xtra-0.gif" WIDTH=123 HEIGHT=11 BORDER=0 ALT="" ONMOUSEOVER="HideLayer()"><BR>
+		</TD>
+	</TR>
+</TABLE>
+</DIV>
+</BODY>
+</HTML>

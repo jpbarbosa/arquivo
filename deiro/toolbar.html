@@ -1,0 +1,112 @@
+<HTML>
+<HEAD><TITLE>DEIRÓ - Toolbar</TITLE>
+<SCRIPT LANGUAGE = "JavaScript">
+<!-- // hide from old browsers
+
+var version = 0;
+
+if (navigator.userAgent.indexOf("Mozilla/3.0") != -1) version = "n3";
+else if (navigator.userAgent.indexOf("Mozilla/4.0") != -1) version = "n3";
+else if (navigator.userAgent.indexOf("MSIE") != -1) version = "e3";
+else if (navigator.userAgent.indexOf("Mozilla/2.0") != -1) version = "n2";
+
+if (version == "n3") {
+
+cidade1 = new Image(80,80);
+cidade1.src = "cidade1.gif";
+
+cidade2 = new Image(80,80);
+cidade2.src = "cidade2.gif";
+
+video1 = new Image(80,80);
+video1.src = "video1.gif";
+
+video2 = new Image(80,80);
+video2.src = "video2.gif";
+
+correio1 = new Image(80,80);
+correio1.src = "correio1.gif";
+
+correio2 = new Image(80,80);
+correio2.src = "correio2.gif";
+
+}
+
+function img_all_inact() {
+                if (version == "n3") {
+				img_inact('cidade');
+				img_inact('video');
+				img_inact('correio');
+				}
+}
+
+function img_act(imgName) {
+               if (version == "n3") {
+               imgOn = eval(imgName + "2.src");
+               document [imgName].src = imgOn;
+               }
+}
+       
+function img_inact(imgName) {
+               if (version == "n3") {
+               imgOff = eval(imgName + "1.src");
+               document [imgName].src = imgOff;
+               }
+}
+// -->
+</SCRIPT>
+</HEAD>
+<BODY BACKGROUND="fundo.gif" BGCOLOR="#000000" TEXT="#FFFFFF" VLINK="#0000C8" ALINK="#0000C8" !onLoad="img_all_inact()">
+
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 ALIGN="CENTER" WIDTH="100%" HEIGHT="100%">
+<TR><TD ALIGN="CENTER" VALIGN="MIDDLE" COLSPAN=0 ROWSPAN=0>
+<A HREF="empresa.html" TARGET="Desktop"><IMG SRC="logo4.gif" WIDTH="120" HEIGHT="68" BORDER="0"></A><BR>
+</TD></TR>
+
+<TR><TD ALIGN="CENTER" VALIGN="MIDDLE" COLSPAN=0 ROWSPAN=0>
+<A HREF="cidade.html" TARGET="Desktop"
+		onMouseover = "img_act('cidade')" 
+		onMouseout = "img_inact('cidade')">
+<NOSCRIPT>
+<IMG SRC="video2.gif" NAME="cidade" WIDTH="80" HEIGHT="80" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"cidade1.gif\" NAME=\"cidade\" WIDTH=\"80\" HEIGHT=\"80\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"cidade2.gif\" NAME=\"cidade\" WIDTH=\"80\" HEIGHT=\"80\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+
+<A HREF="video.html" TARGET="Desktop"
+		onMouseover = "img_act('video')" 
+		onMouseout = "img_inact('video')">
+<NOSCRIPT>
+<IMG SRC="video2.gif" NAME="video" WIDTH="80" HEIGHT="80" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"video1.gif\" NAME=\"video\" WIDTH=\"80\" HEIGHT=\"80\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"video2.gif\" NAME=\"video\" WIDTH=\"80\" HEIGHT=\"80\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+
+<A HREF="mailto:deiro@bastecnet.com.br"
+        onMouseover = "img_act('correio')"
+        onMouseout = "img_inact('correio')">
+<NOSCRIPT>
+<IMG SRC="correio2.gif" NAME="correio" WIDTH="80" HEIGHT="80" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"correio1.gif\" NAME=\"correio\" WIDTH=\"80\" HEIGHT=\"80\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"correio2.gif\" NAME=\"correio\" WIDTH=\"80\" HEIGHT=\"80\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+</TD></TR>
+</TABLE>
+
+</BODY>
+</HTML>

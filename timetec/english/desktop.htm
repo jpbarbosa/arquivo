@@ -1,0 +1,95 @@
+<HTML>
+<HEAD><TITLE>TIMETEC - Desktop - English</TITLE></HEAD>
+
+<SCRIPT LANGUAGE="javascript">
+function status(icon,onicon,text,ontext)
+{
+	document.images[icon].src = "../images/"+onicon + ".gif";
+	document.images[text].src = "../images/"+ontext + ".gif";
+}
+function timeclose()
+{
+	var desktop = window.open('saida.htm', 'TIMECLOSE', 'toolbar,scrollbars,resizable,status,location,menubar,directories');
+	parent.window.close();
+}
+function live()
+{
+	window.open('../live1.htm', 'live', 'width=176,height=144,left=75,top=240');
+}
+</SCRIPT>
+
+<BODY BACKGROUND="../images/fundo0.jpg" BGCOLOR="#000000" TEXT="#FFFFFF" LINK="#FFFF00" VLINK="#008080" ALINK="#000000">
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=610 HEIGHT=402>
+<TR>
+<TD VALIGN=TOP WIDTH=290 HEIGHT=402 ROWSPAN=6>
+	<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=290 HEIGHT=402>
+	<TR>
+	<TD WIDTH=50 HEIGHT=50><IMG SRC="../images/time_logo.gif" WIDTH=50 HEIGHT=50 BORDER=0><BR></TD>
+	<TD WIDTH=10></TD>
+	<TD COLSPAN=3><IMG SRC="../images/time_text.gif" WIDTH=184 HEIGHT=32 BORDER=0><BR></TD>
+	</TR>
+	<TR>
+	<TD HEIGHT=20 VALIGN=Bottom COLSPAN=5><A HREF="javascript:live()" onMouseOver=status("icon","icon_live","text","text_live") onMouseOut=status("icon","icon_","text","text_")><IMG SRC="../images/time_live.gif" WIDTH=50 HEIGHT=10 BORDER=0><BR></A></TD>
+	</TR>
+	<TR>
+	<TD HEIGHT=98 COLSPAN=2></TD>
+	<TD WIDTH=40 VALIGN=Bottom><IMG SRC="../images/icon_.gif" NAME="icon" WIDTH=40 HEIGHT=40 BORDER=0><BR></TD>
+	<TD WIDTH=10></TD>
+	<TD WIDTH=180 VALIGN=Bottom><IMG SRC="../images/text_.gif" NAME="text" WIDTH=130 HEIGHT=40 BORDER=0><BR></TD>
+	</TR>
+	<TR>
+	<TD HEIGHT=40 COLSPAN=5></TD>
+	</TR>
+	<TR>
+	<TD HEIGHT=140 COLSPAN=2></TD>
+	<TD COLSPAN=3 VALIGN=TOP><IMG SRC="../images/time_intri.gif" WIDTH=180 HEIGHT=140 BORDER=0><BR></TD>
+	</TR>
+	<TR>
+	<TD HEIGHT=54 COLSPAN=5 VALIGN=BOTTOM><IMG SRC="../images/time_copy.gif" WIDTH=204 HEIGHT=10 BORDER=0><BR></TD>
+	</TR>
+	</TABLE>
+</TD>
+<TD VALIGN=Top WIDTH=320 HEIGHT=85></TD>
+</TR>
+<TR><TD HEIGHT=52>
+	<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 HEIGHT=52><TR>
+	<TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH=185><A HREF="mailto:plug@timetec.com" onMouseOver=status("icon","icon_email","text","text_email") onMouseOut=status("icon","icon_","text","text_")><IMG SRC="../images/icon_email.gif" WIDTH=40 HEIGHT=40 BORDER=0><BR></A></TD>
+	<TD ALIGN=RIGHT VALIGN=TOP WIDTH=95><A HREF="javascript:timeclose()" onMouseOver=status("icon","icon_saida","text","text_saida") onMouseOut=status("icon","icon_","text","text_")><IMG SRC="../images/icon_saida.gif" WIDTH=40 HEIGHT=40 BORDER=0><BR></A></TD>
+	<TD WIDTH=40></TD>
+	</TR></TABLE>
+</TD></TR>
+<TR><TD HEIGHT=51>
+	<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 HEIGHT=51><TR>
+	<TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH=105><A HREF="anima1.htm" onMouseOver=status("icon","icon_anima","text","text_anima") onMouseOut=status("icon","icon_","text","text_")><IMG SRC="../images/icon_anima.gif" WIDTH=40 HEIGHT=40 BORDER=0><BR></A></TD>
+	<TD WIDTH=215></TD>
+	</TR></TABLE>
+</TD></TR>
+<TR><TD HEIGHT=81>
+	<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 HEIGHT=81><TR>
+	<TD ALIGN="RIGHT" VALIGN=BOTTOM WIDTH=53><A HREF="multi1.htm" onMouseOver=status("icon","icon_multi","text","text_multi") onMouseOut=status("icon","icon_","text","text_")><IMG SRC="../images/icon_multi.gif" WIDTH=40 HEIGHT=40 BORDER=0><BR></A></TD>
+	<TD WIDTH=267></TD>
+	</TR></TABLE>
+</TD></TR>
+<TR><TD HEIGHT=94>
+	<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 HEIGHT=94><TR>
+	<TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH=42><A HREF="inter1.htm" onMouseOver=status("icon","icon_inter","text","text_inter") onMouseOut=status("icon","icon_","text","text_")><IMG SRC="../images/icon_inter.gif" WIDTH=40 HEIGHT=40 BORDER=0><BR></A></TD>
+	<TD WIDTH=279></TD>
+	</TR></TABLE>
+</TD></TR>
+<TR><TD HEIGHT=39>
+	<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 HEIGHT=39><TR>
+	<TD WIDTH=320 ALIGN=Right VALIGN=Bottom><A HREF="../desktop.htm"><IMG SRC="../images/time_port.gif" WIDTH=164 HEIGHT=10 BORDER=0><BR></A></TD>
+	</TR></TABLE>
+</TD></TR>
+</TABLE>
+<BR><BR>
+<IMG SRC="../images/text_saida.gif" WIDTH=130 HEIGHT=40 BORDER=0><BR>
+<IMG SRC="../images/text_email.gif" WIDTH=130 HEIGHT=40 BORDER=0><BR>
+<IMG SRC="../images/text_anima.gif" WIDTH=130 HEIGHT=40 BORDER=0><BR>
+<IMG SRC="../images/text_multi.gif" WIDTH=130 HEIGHT=40 BORDER=0><BR>
+<IMG SRC="../images/text_inter.gif" WIDTH=130 HEIGHT=40 BORDER=0><BR>
+<IMG SRC="../images/text_index.gif" WIDTH=130 HEIGHT=40 BORDER=0><BR>
+<IMG SRC="../images/text_live.gif" WIDTH=130 HEIGHT=40 BORDER=0><BR>
+<IMG SRC="../images/icon_live.gif" WIDTH=130 HEIGHT=40 BORDER=0><BR>
+</BODY>
+</HTML>

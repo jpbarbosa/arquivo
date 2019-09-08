@@ -1,0 +1,184 @@
+<HTML><HEAD><TITLE>Hapner & Kroetz - Advogados</TITLE></HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+function StatusLayer0(source,image)
+{
+	document.layers['Layer0'].document.images[source].src = "../../../portugues/images/"+image + ".gif";
+}
+function StatusLayer1(source,image)
+{
+	document.layers['Layer1'].document.images[source].src = "../../../portugues/images/"+image + ".gif";
+}
+function StatusLayer2(source,image)
+{
+	document.layers['Layer2'].document.images[source].src = "../../../portugues/images/"+image + ".gif";
+}
+function StatusLayer3(source,image)
+{
+	document.layers['Layer3'].document.images[source].src = "../../../portugues/images/"+image + ".gif";
+}
+function StatusLayer4(source,image)
+{
+	document.layers['Layer4'].document.images[source].src = "../../../portugues/images/"+image + ".gif";
+}
+function ShowHideLayer() 
+{
+	var i, visStr, args, theObj;
+	args = ShowHideLayer.arguments;
+	for (i=0; i<(args.length-2); i+=3)
+	{
+    	visStr   = args[i+2];
+    	if (navigator.appName == 'Netscape' && document.layers != null)
+		{
+      		theObj = eval(args[i]);
+      		if (theObj) theObj.visibility = visStr;
+		}
+		else if (document.all != null)
+		{
+			if (visStr == 'show') visStr = 'visible';
+			if (visStr == 'hide') visStr = 'hidden';
+			theObj = eval(args[i+1]);
+			if (theObj) theObj.style.visibility = visStr;
+		}
+	}
+}
+function ShowLayer1()
+{
+	ShowHideLayer('document.layers[\'Layer1\']','document.all[\'Layer1\']','show');
+	StatusLayer0('but1','but-1-1');
+}
+function HideLayer1()
+{
+	ShowHideLayer('document.layers[\'Layer1\']','document.all[\'Layer1\']','hide');
+	StatusLayer0('but1','but-1-0');
+}
+function ShowLayer2()
+{
+	ShowHideLayer('document.layers[\'Layer2\']','document.all[\'Layer2\']','show');
+	StatusLayer0('but2','but-2-1');
+}
+function HideLayer2()
+{
+	ShowHideLayer('document.layers[\'Layer2\']','document.all[\'Layer2\']','hide');
+	StatusLayer0('but2','but-2-0');
+}
+function ShowLayer3()
+{
+	ShowHideLayer('document.layers[\'Layer3\']','document.all[\'Layer3\']','show');
+	StatusLayer0('but3','but-3-1');
+}
+function HideLayer3()
+{
+	ShowHideLayer('document.layers[\'Layer3\']','document.all[\'Layer3\']','hide');
+	StatusLayer0('but3','but-3-0');
+}
+function ShowLayer4()
+{
+	ShowHideLayer('document.layers[\'Layer4\']','document.all[\'Layer4\']','show');
+	StatusLayer0('but4','but-4-1');
+}
+function HideLayer4()
+{
+	ShowHideLayer('document.layers[\'Layer4\']','document.all[\'Layer4\']','hide');
+	StatusLayer0('but4','but-4-0');
+}
+function HideLayer()
+{
+	ShowHideLayer('document.layers[\'Layer1\']','document.all[\'Layer1\']','hide');
+	ShowHideLayer('document.layers[\'Layer2\']','document.all[\'Layer2\']','hide');
+	ShowHideLayer('document.layers[\'Layer3\']','document.all[\'Layer3\']','hide');
+	ShowHideLayer('document.layers[\'Layer4\']','document.all[\'Layer4\']','hide');
+	StatusLayer0('but1','but-1-0');
+	StatusLayer0('but2','but-2-0');
+	StatusLayer0('but3','but-3-0');
+	StatusLayer0('but4','but-4-0');
+}
+function creditos()
+{
+	window.open('../../../creditos.htm', 'creditos', 'width=200,height=150,left=295,top=235')
+}
+</SCRIPT>
+<STYLE TYPE="text/css">
+A:link, A:visited, A:active { color: #003300; text-decoration: none}
+A:hover { color: #003300}
+</STYLE>
+<BODY BACKGROUND="../images/background.gif">
+<MAP NAME="index"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="../../../index.htm" TARGET="_top" ONMOUSEOVER="HideLayer()"></MAP>
+<MAP NAME="hide"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="#" ONMOUSEOVER="HideLayer()"></MAP>
+<LAYER ID="Texto" LEFT="80" TOP="90" Z-INDEX="0">
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD HEIGHT="10" ALIGN="CENTER" COLSPAN="5">
+		<TABLE WIDTH="618" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+			<TR>
+				<TD>
+				<IMG SRC="../../../portugues/images/item-2-contencioso.gif" WIDTH=178 HEIGHT=10 BORDER=0><BR>
+				</TD>
+				<TD VALIGN="top">
+				<IMG SRC="../../../images/xtra-4.gif" WIDTH=439 HEIGHT=9 BORDER=0><IMG SRC="../../../images/xtra-5.gif" WIDTH=1 HEIGHT=9 BORDER=0><BR>
+				</TD>			
+			</TR>
+		</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD HEIGHT="2" ALIGN="CENTER" COLSPAN="5">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=2 BORDER=0><IMG SRC="../../../images/xtra-6.gif" WIDTH=616 HEIGHT=1 BORDER=0 ALIGN="TOP"><IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=2 BORDER=0><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD WIDTH="2">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=20 BORDER=0><BR>
+		</TD>
+		<TD COLSPAN="3" BACKGROUND="../../../images/bg-desenv.gif"><BR></TD>
+		<TD WIDTH="2" ALIGN="right">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=20 BORDER=0><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD WIDTH="2">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=480 BORDER=0><BR>
+		</TD>
+		<TD WIDTH="20" BACKGROUND="../../../images/bg-desenv.gif"><BR></TD>
+		<TD WIDTH="550" VALIGN="TOP" BACKGROUND="../../../images/bg-desenv.gif">
+		<FONT FACE="Verdana,Arial,Helvetica" SIZE="-1">
+		<B>CONTENCIOSO</B><BR><BR>
+
+		As disputas judiciais não são recomendadas pelo Escritório. No entanto, existem determinadas áreas do Direito mais propicias ao surgimento de demandas, ocasião em que a única forma possível de se alcançar resultados eficazes é através do Poder Judiciário. Tais situações são freqüentes em matéria tributária e em direito administrativo, além de várias outras áreas, como societária, falimentar, do consumo e contratual.<BR><BR>
+
+		O Escritório patrocina os interesses de seus clientes em todas as instâncias, incluindo a administrativas. No âmbito judicial, nossos advogados atuam também em todos os Tribunais Superiores do País.<BR><BR>
+
+		Esta atuação inclui todos os tipos de litígios decorrentes do exercício da atividade empresarial, inclusive arbitragens nacionais e internacionais.<BR><BR>
+
+		Algumas das áreas de maior atuação incluem tributos, transformações societárias (fusões, cisões, incorporações), direito econômico (abusos do poder econômico), licitações públicas, responsabilidade civil em geral, responsabilidade decorrente de relações de consumo. Junto com outras áreas do Escritório, representamos também nossos clientes em assuntos relacionados à propriedade intelectual, nacional e internacionalmente (neste caso, preferencialmente, por intermédio de escritório associado). <IMG SRC="../../../images/lg_mini.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALIGN="TOP" USEMAP="#top"><MAP NAME="top"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="#top"></MAP><BR><BR>
+		</FONT>
+		</TD>
+		<TD WIDTH="44" BACKGROUND="../../../images/bg-desenv.gif"><BR></TD>
+		<TD WIDTH="2" ALIGN="right">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=480 BORDER=0><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD HEIGHT="2" ALIGN="CENTER" COLSPAN="5">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=2 BORDER=0><IMG SRC="../../../images/xtra-6.gif" WIDTH=616 HEIGHT=1 BORDER=0 ALIGN="BOTTOM"><IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=2 BORDER=0><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="9" VALIGN="BOTTOM" COLSPAN="6">
+		<IMG SRC="../../../images/xtra-9.gif" WIDTH=90 HEIGHT=8 BORDER=0 USEMAP="#creditos"><MAP NAME="creditos"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="javascript:creditos()"></MAP><BR>
+		</TD>
+	</TR>
+</TABLE>
+</LAYER>
+<LAYER ID="Layer0" LEFT="10" TOP="0" Z-INDEX="0" SRC="layer-0.htm"></LAYER>
+<LAYER ID="Layer1" LEFT="79" TOP="30" Z-INDEX="1" SRC="layer-1.htm" VISIBILITY="HIDE"></LAYER>
+<LAYER ID="Layer2" LEFT="164" TOP="30" Z-INDEX="1" SRC="layer-2.htm" VISIBILITY="HIDE"></LAYER>
+<LAYER ID="Layer3" LEFT="494" TOP="30" Z-INDEX="1" SRC="layer-3.htm" VISIBILITY="HIDE"></LAYER>
+<LAYER ID="Layer4" LEFT="593" TOP="30" Z-INDEX="1" SRC="layer-4.htm" VISIBILITY="HIDE"></LAYER>
+<LAYER ID="Layer5" LEFT="619" TOP="0" Z-INDEX="1" SRC="layer-5.htm"></LAYER>
+</BODY>
+</HTML>

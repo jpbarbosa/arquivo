@@ -1,0 +1,133 @@
+#VRML V1.0 ascii
+
+Separator {
+
+Info {
+    string  "3D Max Worlds, Copyright 1997, Timetec Corp."
+}
+
+DEF BackgroundColor Info {
+    string "0 0 0"
+}
+
+CollideStyle {
+    collide TRUE
+}
+
+DEF Cameras Switch {
+whichChild 0
+
+	DEF "Posição Inicial"	   PerspectiveCamera {
+		position		0 0 10
+	}		
+
+    DEF "Camera 1"    PerspectiveCamera {
+        position        5 0 15
+    }
+
+    DEF "Camera 2"    PerspectiveCamera {
+        position        -10 0 20
+    }
+
+} # end of views Switch
+
+DirectionalLight {
+    intensity   1.9
+    direction   1 1 0
+}
+
+Texture2 {
+       filename    "../images/icones/desk1.gif"
+}
+
+
+
+
+SpinGroup {
+	rotation 1 0 0 .01
+	local FALSE
+SpinGroup {
+	rotation 1 0 1 .04
+	local TRUE
+
+        Translation {
+            translation 0.0 0.0 2.0
+        }
+DEF Cube1 Separator {
+ 
+           Cube {
+                width   1
+                height  1
+                depth   1
+            }
+}
+}
+}
+
+SpinGroup {
+	rotation 1 0 0 .01
+	local FALSE
+SpinGroup {
+	rotation 1 0 1 .03
+	local TRUE
+
+        Translation {
+            translation 0.0 0.0 -2.0
+        }
+DEF Cube1 Separator {
+ 
+           Cube {
+                width   1
+                height  1
+                depth   1
+            }
+}
+}
+}
+
+        Translation {
+            translation 0.0 2.0 0.0
+        }
+
+SpinGroup {
+	rotation  1 0 0 .01
+	local FALSE
+SpinGroup {
+	rotation 0 0 1 .02
+	local TRUE
+DEF Cube2 Separator {
+ 
+           Cube {
+                width   1
+                height  1
+                depth   1
+            }
+}
+}
+}
+
+        Translation {
+            translation 0.0 -4.0 0.0
+        }
+
+SpinGroup {
+	rotation 1 0 0 .01 
+	local FALSE
+SpinGroup {
+	rotation 1 1 1 .03
+	local TRUE
+DEF Cube2 Separator {
+ 
+           Cube {
+                width   1
+                height  1
+                depth   1
+            }
+}
+}
+}
+}
+}
+
+}
+XTR*ch

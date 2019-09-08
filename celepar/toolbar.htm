@@ -1,0 +1,129 @@
+<HTML>
+<HEAD><TITLE>CELEPAR</TITLE></HEAD>
+<SCRIPT LANGUAGE = "JavaScript">
+<!-- // hide from old browsers
+
+var version = 0;
+
+if (navigator.userAgent.indexOf("Mozilla/3.0") != -1) version = "n3";
+else if (navigator.userAgent.indexOf("Mozilla/4.0") != -1) version = "n3";
+else if (navigator.userAgent.indexOf("MSIE") != -1) version = "e3";
+else if (navigator.userAgent.indexOf("Mozilla/2.0") != -1) version = "n2";
+
+if (version == "n3") {
+
+i1 = new Image(115,65);
+i1.src = "i1.gif";
+
+i2 = new Image(115,65);
+i2.src = "i2.gif";
+
+e1 = new Image(115,65);
+e1.src = "e1.gif";
+
+e2 = new Image(115,65);
+e2.src = "e2.gif";
+
+a1 = new Image(115,65);
+a1.src = "a1.gif";
+
+a2 = new Image(115,65);
+a2.src = "a2.gif";
+
+m1 = new Image(115,65);
+m1.src = "m1.gif";
+
+m2 = new Image(115,65);
+m2.src = "m2.gif";
+
+}
+
+function img_all_inact() {
+                if (version == "n3") {
+				img_inact('i');
+				img_inact('e');
+				img_inact('a');
+				img_inact('m');
+				}
+}
+
+function img_act(imgName) {
+               if (version == "n3") {
+               imgOn = eval(imgName + "2.src");
+               document [imgName].src = imgOn;
+               }
+}
+       
+function img_inact(imgName) {
+               if (version == "n3") {
+               imgOff = eval(imgName + "1.src");
+               document [imgName].src = imgOff;
+               }
+}
+// -->
+</SCRIPT>
+<BODY BACKGROUND="fundo1.jpg" BGCOLOR="#FFFFC8">
+<TABLE CELLSPACING=0 CELLPADDING=0 WIDTH=70% HEIGHT=100%>
+<TR><TD ALIGN="CENTER" VALIGN="MIDDLE">
+<A HREF="i.htm" TARGET="_top"
+        onMouseover = "img_act('i')"
+        onMouseout = "img_inact('i')">
+<NOSCRIPT>
+<IMG SRC="i1.gif" NAME="i" WIDTH="115" HEIGHT="65" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"i1.gif\" NAME=\"i\" WIDTH=\"115\" HEIGHT=\"65\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"i1.gif\" NAME=\"i\" WIDTH=\"115\" HEIGHT=\"65\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+</TD></TR>
+<TR><TD ALIGN="CENTER" VALIGN="MIDDLE">
+<A HREF="e.htm" TARGET="_top"
+        onMouseover = "img_act('e')"
+        onMouseout = "img_inact('e')">
+<NOSCRIPT>
+<IMG SRC="e1.gif" NAME="i" WIDTH="115" HEIGHT="65" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"e1.gif\" NAME=\"e\" WIDTH=\"115\" HEIGHT=\"65\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"e1.gif\" NAME=\"e\" WIDTH=\"115\" HEIGHT=\"65\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+</TD></TR>
+<TR><TD ALIGN="CENTER" VALIGN="MIDDLE">
+<A HREF="a.htm" TARGET="_top"
+        onMouseover = "img_act('a')"
+        onMouseout = "img_inact('a')">
+<NOSCRIPT>
+<IMG SRC="a1.gif" NAME="i" WIDTH="115" HEIGHT="65" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"a1.gif\" NAME=\"a\" WIDTH=\"115\" HEIGHT=\"65\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"a1.gif\" NAME=\"a\" WIDTH=\"115\" HEIGHT=\"65\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+</TD></TR>
+<TR><TD ALIGN="CENTER" VALIGN="MIDDLE">
+<A HREF="m.htm" TARGET="_top"
+        onMouseover = "img_act('m')"
+        onMouseout = "img_inact('m')">
+<NOSCRIPT>
+<IMG SRC="m1.gif" NAME="m" WIDTH="115" HEIGHT="65" BORDER="0"></NOSCRIPT><SCRIPT>
+<!-- 
+	if (version == "n3") {
+	document.write("<IMG SRC=\"m1.gif\" NAME=\"m\" WIDTH=\"115\" HEIGHT=\"65\" BORDER=\"0\">");
+	} else if (version != "n2") {
+	document.write("<IMG SRC=\"m1.gif\" NAME=\"m\" WIDTH=\"115\" HEIGHT=\"65\" BORDER=\"0\">");
+	}
+// -->
+</SCRIPT></A><BR>
+</TD></TR>
+</TABLE>
+</BODY>
+</HTML>

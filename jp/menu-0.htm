@@ -1,0 +1,66 @@
+<HTML><HEAD><TITLE>JP Menu</TITLE></HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+browser_name = navigator.appName;
+browser_version = parseFloat(navigator.appVersion);
+if (browser_name == "Microsoft Internet Explorer" && browser_version < 4.0)
+{
+	preload = 'false';
+}
+else
+{
+	preload = 'true';
+}
+if (preload == 'true'){
+	b11=new Image;b11.src="images/buttons/but-1-1.gif";
+	b12=new Image;b12.src="images/buttons/but-1-2.gif";
+	b21=new Image;b21.src="images/buttons/but-2-1.gif";
+	b22=new Image;b22.src="images/buttons/but-2-2.gif";
+	b31=new Image;b31.src="images/buttons/but-3-1.gif";
+	b32=new Image;b32.src="images/buttons/but-3-2.gif";
+	b41=new Image;b41.src="images/buttons/but-4-1.gif";
+	b42=new Image;b42.src="images/buttons/but-4-2.gif";
+	b51=new Image;b51.src="images/buttons/but-5-1.gif";
+	b52=new Image;b52.src="images/buttons/but-5-2.gif";
+}
+function status(source,image){
+	if(source!=thisItem&&source!='but0'){
+		if (document.all)document.images[source].src = "images/buttons/"+image + ".gif";
+		else document.layers['menu'].document.images[source].src = "images/buttons/"+image + ".gif";
+	}
+}
+var thisItem = 'but0'
+function but(item,link){
+	thisOldItem=thisItem
+	status(item,'but-'+item.substring(3,4)+'-2')
+	thisItem=item
+	status(thisOldItem,'but-'+thisOldItem.substring(3,4)+'-0')
+	parent.frames[2].location = link
+}
+
+</SCRIPT>
+<BODY BGCOLOR="#CCCCCC" BACKGROUND="images/menu.gif">
+<DIV ID="menu" STYLE="position:absolute; left:0px; top:0px; z-index:1">
+<TABLE WIDTH="160" BORDER="0" CELLSPACING="0" CELLPADDING="0" BORDERCOLOR="#00FF00">
+<TR>
+	<TD>
+	<IMG SRC="images/fundo.gif" WIDTH=160 HEIGHT=10><BR>
+	<IMG SRC="images/fundo.gif" WIDTH=10 HEIGHT=110><IMG SRC="images/logo.gif" WIDTH=150 HEIGHT=110 BORDER=0 USEMAP="#but0"><MAP NAME="but0"><AREA SHAPE="CIRCLE" COORDS="75,55,1000" HREF="javascript:but('but0','item-0-news.htm')"></MAP><BR>
+	<IMG SRC="images/null.gif" WIDTH=1 HEIGHT=25><BR>
+	<IMG SRC="images/buttons/but-1-0.gif" WIDTH=120 HEIGHT=20 BORDER=0 NAME="but1" USEMAP="#but1"><MAP NAME="but1"><AREA SHAPE="CIRCLE" COORDS="75,55,1000" HREF="javascript:but('but1','item-1-portfolio_1.htm')" ONMOUSEOVER=status("but1","but-1-1") ONMOUSEOUT=status("but1","but-1-0")></MAP><BR>
+	<IMG SRC="images/null.gif" WIDTH=1 HEIGHT=10><BR>
+	<IMG SRC="images/buttons/but-5-0.gif" WIDTH=120 HEIGHT=20 BORDER=0 NAME="but5" USEMAP="#but5"><MAP NAME="but5"><AREA SHAPE="CIRCLE" COORDS="75,55,1000" HREF="javascript:but('but5','item-5-aboutme.htm')" ONMOUSEOVER=status("but5","but-5-1") ONMOUSEOUT=status("but5","but-5-0")></MAP><BR>
+	<IMG SRC="images/null.gif" WIDTH=1 HEIGHT=10><BR>
+	<IMG SRC="images/buttons/but-2-0.gif" WIDTH=120 HEIGHT=20 BORDER=0 NAME="but2" USEMAP="#but2"><MAP NAME="but2"><AREA SHAPE="CIRCLE" COORDS="75,55,1000" HREF="javascript:but('but2','item-2-bookmark.htm')" ONMOUSEOVER=status("but2","but-2-1") ONMOUSEOUT=status("but2","but-2-0")></MAP><BR>
+	<IMG SRC="images/null.gif" WIDTH=1 HEIGHT=10><BR>
+	<IMG SRC="images/buttons/but-3-0.gif" WIDTH=120 HEIGHT=20 BORDER=0 NAME="but3" USEMAP="#but3"><MAP NAME="but3"><AREA SHAPE="CIRCLE" COORDS="75,55,1000" HREF="javascript:but('but3','item-3-install.htm')" ONMOUSEOVER=status("but3","but-3-1") ONMOUSEOUT=status("but3","but-3-0")></MAP><BR>
+	<IMG SRC="images/null.gif" WIDTH=1 HEIGHT=10><BR>
+	<IMG SRC="images/buttons/but-4-0.gif" WIDTH=120 HEIGHT=20 BORDER=0 NAME="but4" USEMAP="#but4"><MAP NAME="but4"><AREA SHAPE="CIRCLE" COORDS="75,55,1000" HREF="mailto:jpb@bsi.com.br" ONMOUSEOVER=status("but4","but-4-1") ONMOUSEOUT=status("but4","but-4-0")></MAP><BR>
+	<IMG SRC="images/null.gif" WIDTH=1 HEIGHT=35><BR>
+	<IMG SRC="images/fundo.gif" WIDTH=20 HEIGHT=10><IMG SRC="images/sombra.gif" WIDTH=130 HEIGHT=10><BR>
+	<IMG SRC="images/fundo.gif" WIDTH=160 HEIGHT=468><BR>
+	</TD>
+</TR>
+</TABLE>
+</DIV>
+</BODY>
+</HTML>

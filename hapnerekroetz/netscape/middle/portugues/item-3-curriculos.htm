@@ -1,0 +1,503 @@
+<HTML><HEAD><TITLE>Hapner & Kroetz - Advogados</TITLE></HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+function StatusLayer0(source,image)
+{
+	document.layers['Layer0'].document.images[source].src = "../../../portugues/images/"+image + ".gif";
+}
+function StatusLayer1(source,image)
+{
+	document.layers['Layer1'].document.images[source].src = "../../../portugues/images/"+image + ".gif";
+}
+function StatusLayer2(source,image)
+{
+	document.layers['Layer2'].document.images[source].src = "../../../portugues/images/"+image + ".gif";
+}
+function StatusLayer3(source,image)
+{
+	document.layers['Layer3'].document.images[source].src = "../../../portugues/images/"+image + ".gif";
+}
+function StatusLayer4(source,image)
+{
+	document.layers['Layer4'].document.images[source].src = "../../../portugues/images/"+image + ".gif";
+}
+function ShowHideLayer() 
+{
+	var i, visStr, args, theObj;
+	args = ShowHideLayer.arguments;
+	for (i=0; i<(args.length-2); i+=3)
+	{
+    	visStr   = args[i+2];
+    	if (navigator.appName == 'Netscape' && document.layers != null)
+		{
+      		theObj = eval(args[i]);
+      		if (theObj) theObj.visibility = visStr;
+		}
+		else if (document.all != null)
+		{
+			if (visStr == 'show') visStr = 'visible';
+			if (visStr == 'hide') visStr = 'hidden';
+			theObj = eval(args[i+1]);
+			if (theObj) theObj.style.visibility = visStr;
+		}
+	}
+}
+function ShowLayer1()
+{
+	ShowHideLayer('document.layers[\'Layer1\']','document.all[\'Layer1\']','show');
+	StatusLayer0('but1','but-1-1');
+}
+function HideLayer1()
+{
+	ShowHideLayer('document.layers[\'Layer1\']','document.all[\'Layer1\']','hide');
+	StatusLayer0('but1','but-1-0');
+}
+function ShowLayer2()
+{
+	ShowHideLayer('document.layers[\'Layer2\']','document.all[\'Layer2\']','show');
+	StatusLayer0('but2','but-2-1');
+}
+function HideLayer2()
+{
+	ShowHideLayer('document.layers[\'Layer2\']','document.all[\'Layer2\']','hide');
+	StatusLayer0('but2','but-2-0');
+}
+function ShowLayer3()
+{
+	ShowHideLayer('document.layers[\'Layer3\']','document.all[\'Layer3\']','show');
+	StatusLayer0('but3','but-3-1');
+}
+function HideLayer3()
+{
+	ShowHideLayer('document.layers[\'Layer3\']','document.all[\'Layer3\']','hide');
+	StatusLayer0('but3','but-3-0');
+}
+function ShowLayer4()
+{
+	ShowHideLayer('document.layers[\'Layer4\']','document.all[\'Layer4\']','show');
+	StatusLayer0('but4','but-4-1');
+}
+function HideLayer4()
+{
+	ShowHideLayer('document.layers[\'Layer4\']','document.all[\'Layer4\']','hide');
+	StatusLayer0('but4','but-4-0');
+}
+function HideLayer()
+{
+	ShowHideLayer('document.layers[\'Layer1\']','document.all[\'Layer1\']','hide');
+	ShowHideLayer('document.layers[\'Layer2\']','document.all[\'Layer2\']','hide');
+	ShowHideLayer('document.layers[\'Layer3\']','document.all[\'Layer3\']','hide');
+	ShowHideLayer('document.layers[\'Layer4\']','document.all[\'Layer4\']','hide');
+	StatusLayer0('but1','but-1-0');
+	StatusLayer0('but2','but-2-0');
+	StatusLayer0('but3','but-3-0');
+	StatusLayer0('but4','but-4-0');
+}
+function creditos()
+{
+	window.open('../../../creditos.htm', 'creditos', 'width=200,height=150,left=295,top=235')
+}
+</SCRIPT>
+<STYLE TYPE="text/css">
+A:link, A:visited, A:active { color: #003300; text-decoration: none}
+A:hover { color: #003300}
+</STYLE>
+<BODY BACKGROUND="../images/background.gif">
+<MAP NAME="index"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="../../../index.htm" TARGET="_top" ONMOUSEOVER="HideLayer()"></MAP>
+<MAP NAME="hide"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="#" ONMOUSEOVER="HideLayer()"></MAP>
+<LAYER ID="Texto" LEFT="80" TOP="90" Z-INDEX="0">
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD HEIGHT="10" ALIGN="CENTER" COLSPAN="5">
+		<TABLE WIDTH="618" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+			<TR>
+				<TD>
+				<IMG SRC="../../../portugues/images/item-3-curriculos.gif" WIDTH=178 HEIGHT=10 BORDER=0><BR>
+				</TD>
+				<TD VALIGN="top">
+				<IMG SRC="../../../images/xtra-4.gif" WIDTH=439 HEIGHT=9 BORDER=0><IMG SRC="../../../images/xtra-5.gif" WIDTH=1 HEIGHT=9 BORDER=0><BR>
+				</TD>			
+			</TR>
+		</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD HEIGHT="2" ALIGN="CENTER" COLSPAN="5">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=2 BORDER=0><IMG SRC="../../../images/xtra-6.gif" WIDTH=616 HEIGHT=1 BORDER=0 ALIGN="TOP"><IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=2 BORDER=0><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD WIDTH="2">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=20 BORDER=0><BR>
+		</TD>
+		<TD COLSPAN="3" BACKGROUND="../../../images/bg-desenv.gif"><BR></TD>
+		<TD WIDTH="2" ALIGN="right">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=20 BORDER=0><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD WIDTH="2">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=5700 BORDER=0><BR>
+		</TD>
+		<TD WIDTH="20" BACKGROUND="../../../images/bg-desenv.gif"><BR></TD>
+		<TD WIDTH="550" VALIGN="TOP" BACKGROUND="../../../images/bg-desenv.gif">
+		<FONT FACE="Verdana,Arial,Helvetica" SIZE="-1">
+		<A TITLE="" STYLE="cursor:default">
+		<B>CURRÍCULOS</B><BR><BR>
+		<B><I>Carlos Eduardo Manfredini Hapner</I></B><BR><BR>
+
+		Nascido em Curitiba, Brasil, 1959; Admitido em 1983.<BR><BR>
+
+		Educação: Universidade Federal do Paraná (Bacharelado 1983; M.B., 1989); Pontifícia Universidade Católica de São Paulo (Ph. D. em Curso). Professor de Direito Comercial da Universidade Federal do Paraná.<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB) (Membro do Conselho Federal); International Bar Association (IBA); Union International des Advocats (UIA); Inter-American Bar Association (IABA); American Bar Association (ABA) (Sections of Tax Law; International Law and Practice); Southwestern Legal Foundation, Dallas, Estados Unidos.<BR><BR>
+		
+		Línguas: Português, Inglês, Espanhol e Alemão.<BR><BR>
+
+		E-Mail: cehapner@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Tarcísio Araújo Kroetz</I></B><BR><BR>
+
+		Nascido em Porto União, Brasil, 1965; Admitido em 1990.<BR><BR>
+
+		Educação: Universidade Federal do Paraná (Bacharelado 1990); Pontifícia Universidade Católica de São Paulo (Ph. D. em Curso). Professor de Direito Comercial da Universidade Federal do Paraná e da Pontifícia Universidade Católica do Paraná.<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB) (Membro do Conselho de Relações Internacionais da Seção do Estado do Paraná; International Bar Association (IBA); Union International des Advocats (UIA); American Bar Association (ABA); Southwestern Legal Foundation, Dallas, Estados Unidos.<BR><BR>
+
+		Línguas: Português e Inglês.<BR><BR>
+
+		E-Mail: takroetz@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Fabíola Polatti Cordeiro Fleishfresser</I></B><BR><BR>
+
+		Nascida em Curitiba, Brasil, 1971; Admitida em 1994.<BR><BR>
+
+		Educação: Faculdade de Direito de Curitiba (Bacharelado 1993).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB); Southwestern Legal Foundation, Dallas, Estados Unidos.<BR><BR>
+
+		Línguas: Português e Inglês.<BR><BR>
+
+		E-Mail: fabiola@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Lúcia Trindade</I></B><BR><BR>
+
+		Nascida em Curitiba, Brasil, 1964; Admitida em 1989.<BR><BR>
+		
+		Educação: Universidade Federal do Paraná (Bacharelado 1988).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português e Inglês.<BR><BR>
+
+		E-Mail: lucia@hapnerkroetz.com.br<BR><BR><BR>
+
+
+
+		<B><I>Ana Paula Muggiati dos Santos</I></B><BR><BR>
+		
+		Nascida em Curitiba, Brasil, 1968; Admitida, 1994.<BR><BR>
+
+		Educação: Faculdade de Direito de Curitiba (Bacharelado 1993); IBEJ (Especialização em Processo Civil), 1998.<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português e Inglês.<BR><BR>
+
+		E-Mail: anapaula@hapnerkroetz.com.br<BR><BR><BR>
+
+		
+		<B><I>Fabio Artigas Grillo</I></B><BR><BR>
+
+		Nascido em Curitiba, Brasil, 1973; Admitido em 1997.<BR><BR>
+
+		Educação: Universidade Federal do Paraná (Bacharelado 1996; M.B., em curso).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB); Southwestern Legal Foundation, Dallas, Estados Unidos.<BR><BR>
+
+		Línguas: Português, Inglês e Italiano.<BR><BR>
+
+		E-Mail: fabio@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Wagner da Matta e Caldas</I></B><BR><BR>		
+		
+		Nascido em Manaus, Brasil, 1961; Admitido em 1997.<BR><BR>
+
+		Educação: Pontifícia Universidade Católica do Paraná (Bacharelado 1996); Academia Paranaense de Estudos Jurídicos, APEJ (Especialização em Direito do Trabalho).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português.<BR><BR>
+
+		E-Mail: wagner@hapnerkroetz.com.br<BR><BR><BR>
+
+		
+		<B><I>Alexandre Ditzel Faraco</I></B><BR><BR>
+
+		Nascido em Curitiba, Brasil, 1974; Admitido em 1998.<BR><BR>
+
+		Educação: Universidade Federal do Paraná (Bacharelado 1997); Universidade da California - Davis (Concurrent Studies, 1996); Universidade de São Paulo (M.B. em Curso).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português, Inglês e Italiano.<BR><BR>
+
+		E-Mail: alexandre@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Adriana Antunes Maciel Aranha Hapner</I></B><BR><BR>
+
+		Nascida em Rio de Janeiro, Brasil, 1966; Admitida em 1998.<BR><BR>
+
+		Educação: Universidade Federal do Paraná (Bacharelado 1988).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português, Inglês e Francês.<BR><BR>
+
+		E-Mail: adrianah@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Adriana Canet Krause Vianna</I></B><BR><BR>
+
+		Nascida em Curitiba, Brasil, 1975; Admitida em 1998.<BR><BR>
+
+		Educação: Universidade Federal do Paraná (Bacharelado 1997).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português, Inglês e Francês.<BR><BR>
+
+		E-Mail: adrianak@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Daniel Küster Gevaerd</I></B><BR><BR>
+
+		Nascido em Curitiba, Brasil, 1971; Admitido em 1998.<BR><BR>
+
+		Educação: Universidade Federal do Paraná (Bacharelado 1994).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português, Inglês e Francês.<BR><BR>
+
+		E-Mail: daniel@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Daniela Zicarelli Cravo</I></B><BR><BR>
+
+		Nascida em Curitiba, Brasil, 1970; Admitida em 1998.<BR><BR>
+
+		Educação: Pontifícia Universidade Católica do Paraná (Bacharelado 1993).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB); Southwestern Legal Foundation, Dallas, Estados Unidos.<BR><BR>
+
+		Línguas: Português e Inglês.<BR><BR>
+
+		E-Mail: daniela@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Verônica Madureira Pereira</I></B><BR><BR>
+
+		Nascida em Curitiba, Brasil, 1969; Admitida em 1999.<BR><BR>
+
+		Educação: Faculdade de Direito de Curitiba (Bacharelado 1998); Academia Paranaense de Estudos Jurídicos, APEJ (Especialização em Direito do Trabalho).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português e Inglês.<BR><BR>
+
+		E-Mail: veronica@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Fernanda Franco</I></B><BR><BR>
+
+		Nascida em Florianópolis, Brasil, 1974; Admitida em 1998.<BR><BR>
+
+		Educação: Universidade do Vale do Itajaí - Univali (Bacharelado 1995); IBEJ (Especialização em Processo Civil), 1998.<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português.<BR><BR>
+
+		E-Mail: fernanda@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Daniela Ballão Ernlund</I></B><BR><BR>
+
+		Nascida em Curitiba, Brasil, 1970; Admitida em 1999.<BR><BR>
+
+		Educação: Universidade Federal do Paraná (Bacharelado 1993); Faculdade de Direito de Curitiba (Pós-Graduação em Direito Internacional); Uinversidade de Pittisburgh, Escola de Direito, PA, Estados Unidos (LL.M, 1997); Westinghouse Corporation, Departamento de Direito, PA, Estados Unidos (Estágio, 1997).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB); American Society of International Law; European Society of International Law.<BR><BR>
+
+		Línguas: Português e Inglês.<BR><BR>
+
+		E-Mail: dernlund@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Sérgio de Lima Conter Filho</I></B><BR><BR>
+
+		Nascido em Curitiba, Brasil, 1971; Admitida em 1999.<BR><BR>
+
+		Educação: Universidade Federal do Paraná (Bacharelado 1996); Habilitação em Direito Público e Privado.<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Portuguêse e Inglês.<BR><BR>
+
+		E-Mail: sergio@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Gabriela Teixeira de Freitas Paula</I></B><BR><BR>
+
+		Nascida em Curitiba, Brasil, 1974; Admitida em 1999.<BR><BR>
+
+		Educação: Pontifícia Universidade Católica do Paraná (Bacharelado 1998).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português.<BR><BR>
+
+		E-Mail: gabriela@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Andréia Cunha</I></B><BR><BR>
+
+		Nascida em Curitiba, Brasil, 1976; Admitida em 1999.<BR><BR>
+
+		Educação: Pontifícia Universidade Católica do Paraná (Bacharelado 1998).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português.<BR><BR>
+
+		E-Mail: andreia@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Susen Karin Carcereri Zeni</I></B><BR><BR>
+
+		Nascida em Curitiba, Brasil, 1965; Admitida em 1999.<BR><BR>
+
+		Educação: Pontifícia Universidade Católica do Paraná (Bacharelado 1988).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português.<BR><BR>
+
+		E-Mail: susen@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Alexandre Hellender de Quadros</I></B><BR><BR>
+
+		Nascido em Curitiba, Brasil, 1971; Admitido em 1999.<BR><BR>
+
+		Educação: Universidade Federal do Paraná (Bacharelado 1996); Academia Paranaense de Estudos Jurídicos (Especialização em Direito do Trabalho); Faculdade de Direito de Curitiba (Especialização em Direito Administrativo, em Curso).
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português.<BR><BR>
+
+		E-Mail: quadros@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Fernanda Macedo Pereira Guimarães</I></B><BR><BR>
+
+		Nascida em Curitiba, Brasil, 1975; Admitida em 1999.<BR><BR>
+
+		Educação: Faculdade de Direito de Curitiba (Bacharelado 1999).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português, Inglês e Francês.<BR><BR>
+
+		E-Mail: fmg@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Bruno Guiss</I></B><BR><BR>
+
+		Nascido em Curitiba, Brasil, 1975; Admitido em 1999.<BR><BR>
+
+		Educação: Pontifícia Universidade Católica do Paraná (Bacharelado 1997).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português e Inglês.<BR><BR>
+
+		E-Mail: bruno@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Cintia Mara Guilherme</I></B><BR><BR>
+
+		Nascida em Curitiba, Brasil, 1973; Admitida em 1999.<BR><BR>
+
+		Educação: Faculdade de Direito de Curitiba (Bacharelado 1995).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português e Espanhol.<BR><BR>
+
+		E-Mail: cmg@hapnerkroetz.com.br<BR><BR><BR>
+		
+		
+		<B><I>Daniele Alessandra Grando</I></B><BR><BR>
+
+		Nascido em Curitiba, Brasil, 1974; Admitido em 1999.<BR><BR>
+
+		Educação: Pontifícia Universidade Católica do Paraná (Bacharelado 1997).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português e Inglês.<BR><BR>
+
+		E-Mail: dag@hapnerkroetz.com.br<BR><BR><BR>
+
+
+		<B><I>Gizelle Amboni Petri</I></B><BR><BR>
+
+		Nascida em Curitiba, Brasil, 1974; Admitida em 1999.<BR><BR>
+
+		Educação: Faculdade de Direito de São Carlos (Bacharelado 1998).<BR><BR>
+
+		Membro: Ordem dos Advogados do Brasil (OAB).<BR><BR>
+
+		Línguas: Português e Italiano.<BR><BR>
+
+		E-Mail: gizelle@hapnerkroetz.com.br <IMG SRC="../../../images/lg_mini.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALIGN="MIDDLE" USEMAP="#top"><MAP NAME="top"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" ALT="Voltar ao Topo" ONCLICK="GotoTimeline('Timeline1','1')"><BR><BR>
+
+		</A>
+		</FONT>
+		</TD>
+		<TD WIDTH="44" BACKGROUND="../../../images/bg-desenv.gif"><BR></TD>
+		<TD WIDTH="2" ALIGN="right">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=5700 BORDER=0><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="9"></TD>
+		<TD HEIGHT="2" ALIGN="CENTER" COLSPAN="5">
+		<IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=2 BORDER=0><IMG SRC="../../../images/xtra-6.gif" WIDTH=616 HEIGHT=1 BORDER=0 ALIGN="BOTTOM"><IMG SRC="../../../images/xtra-6.gif" WIDTH=1 HEIGHT=2 BORDER=0><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="9" VALIGN="BOTTOM" COLSPAN="6">
+		<IMG SRC="../../../images/xtra-9.gif" WIDTH=90 HEIGHT=8 BORDER=0 USEMAP="#creditos"><MAP NAME="creditos"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="javascript:creditos()"></MAP><BR>
+		</TD>
+	</TR>
+</TABLE>
+</LAYER>
+<LAYER ID="Layer0" LEFT="10" TOP="0" Z-INDEX="0" SRC="layer-0.htm"></LAYER>
+<LAYER ID="Layer1" LEFT="79" TOP="30" Z-INDEX="1" SRC="layer-1.htm" VISIBILITY="HIDE"></LAYER>
+<LAYER ID="Layer2" LEFT="164" TOP="30" Z-INDEX="1" SRC="layer-2.htm" VISIBILITY="HIDE"></LAYER>
+<LAYER ID="Layer3" LEFT="494" TOP="30" Z-INDEX="1" SRC="layer-3.htm" VISIBILITY="HIDE"></LAYER>
+<LAYER ID="Layer4" LEFT="593" TOP="30" Z-INDEX="1" SRC="layer-4.htm" VISIBILITY="HIDE"></LAYER>
+<LAYER ID="Layer5" LEFT="619" TOP="0" Z-INDEX="1" SRC="layer-5.htm"></LAYER>
+</BODY>
+</HTML>

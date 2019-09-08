@@ -1,0 +1,388 @@
+<HTML><HEAD><TITLE>WZT On-Line</TITLE></HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+browser_name = navigator.appName;
+function Status(source,image,sourcex,imagex)
+{
+	if (browser_name == "Microsoft Internet Explorer")
+	{
+		document.images[source].src = "images/"+image + ".gif";
+		document.images[sourcex].src = "images/"+imagex + ".gif";
+	}
+	else
+	{
+		document.layers['Layer1'].document.images[source].src = "images/"+image + ".gif";
+		document.layers['Layer1'].document.images[sourcex].src = "images/"+imagex + ".gif";
+	}
+}
+</SCRIPT>
+<BODY BACKGROUND="images/bg-1.jpg" BGPROPERTIES="FIXED">
+<BASEFONT SIZE="-1" FACE="Arial">
+<MAP NAME="index"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="index.htm"></MAP>
+<MAP NAME="bt-1"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="1-0-a_empresa.htm" ONMOUSEOVER="Status('bt-t-1','bt-1-1','bt-b-1','bt-1-1')" ONMOUSEOUT="Status('bt-t-1','bt-1-0','bt-b-1','bt-1-0')"></MAP>
+<MAP NAME="bt-2"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="2-0-servicos.htm" ONMOUSEOVER="Status('bt-t-2','bt-2-1','bt-b-2','bt-2-1')" ONMOUSEOUT="Status('bt-t-2','bt-2-0','bt-b-2','bt-2-0')"></MAP>
+<MAP NAME="bt-3"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="#"></MAP>
+<MAP NAME="bt-4"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="4-0-faq.htm" ONMOUSEOVER="Status('bt-t-4','bt-4-1','bt-b-4','bt-4-1')" ONMOUSEOUT="Status('bt-t-4','bt-4-0','bt-b-4','bt-4-0')"></MAP>
+<MAP NAME="bt-5"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="5-0-wzt_on-line_netscape.htm"></MAP>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+function doThisCommandEveryIntervalMS(command, interval)
+{
+	setInterval(eval('"' + command + '"'), interval);
+}
+function getWindowWidth()
+{
+	return window.innerWidth
+}
+function getWindowHeight()
+{
+	return window.innerHeight
+}
+function getPageScrollLeft()
+{
+	return window.pageXOffset
+}
+function getPageScrollTop()
+{
+	return window.pageYOffset
+}
+function setPosFromLeft(xCoord)
+{
+	eval("document.bg").left = xCoord
+}
+function setPosFromTop(yCoord)
+{
+	eval("document.bg").top = yCoord
+}
+function makeLinkedImage()
+{
+	document.write(
+	'<A HREF="', "", '"><STYLE TYPE="text/css"> #bg {position:absolute; z-index:1}</STYLE><DIV ID="bg"><IMG SRC="images/bg-1.jpg"></DIV>');
+}
+// '
+</SCRIPT>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+var windowWidth=0;
+var windowHeight=0;
+var pageScrollLeft=0;
+var pageScrollTop=0;
+function waterMark()
+{
+	if (navigator.appVersion.indexOf("Mac") == -1 && navigator.appName.indexOf("Microsoft Internet Explorer") == -1)
+	{
+		oldWindowWidth = windowWidth;
+		oldWindowHeight = windowHeight;
+		oldPageScrollLeft = pageScrollLeft;
+		oldPageScrollTop = pageScrollTop;
+		windowWidth = getWindowWidth();
+		windowHeight = getWindowHeight();
+		pageScrollLeft = getPageScrollLeft();
+		pageScrollTop = getPageScrollTop();
+		if ((windowHeight != oldWindowHeight)||(windowWidth != oldWindowWidth)||(pageScrollLeft != oldPageScrollLeft)||(pageScrollTop != oldPageScrollTop))
+		{
+			setPosFromTop(pageScrollTop);
+			setPosFromLeft(pageScrollLeft);
+		}
+	}
+}
+if (navigator.appVersion.indexOf("Mac") == -1 && navigator.appName.indexOf("Microsoft Internet Explorer") == -1)
+{
+	makeLinkedImage();
+	doThisCommandEveryIntervalMS("waterMark()", 100);
+}
+</SCRIPT>
+<DIV ID="Layer1" STYLE="position:absolute; left:0px; top:0px; z-index:2">
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+	<TD>
+	<IMG SRC="images/lg-1.gif" WIDTH=200 HEIGHT=85 BORDER=0 ALT="Index" USEMAP="#index"><BR>
+	</TD>
+	<TD ALIGN="RIGHT" VALIGN="TOP">
+	<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=25><BR>
+	<IMG SRC="images/bt-0-3.gif" WIDTH=10 HEIGHT=6><BR>
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=14><BR>
+	</TD>
+	<TD VALIGN="TOP">
+	<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD COLSPAN="10" BGCOLOR="#999999">
+		<IMG SRC="images/lg-2.gif" WIDTH=193 HEIGHT=15><BR>
+		</TD>
+		<TD BGCOLOR="#333333">
+		<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=1><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="10" COLSPAN="11">
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-1-0.gif" WIDTH=89 HEIGHT=20 BORDER=0 NAME="bt-t-1" ALT="A Empresa" USEMAP="#bt-1"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-2-0.gif" WIDTH=79 HEIGHT=20 BORDER=0 NAME="bt-t-2" ALT="Serviços" USEMAP="#bt-2"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-3-0.gif" WIDTH=77 HEIGHT=20 BORDER=0 NAME="bt-t-3" ALT="Clientes" USEMAP="#bt-3"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-4-0.gif" WIDTH=55 HEIGHT=20 BORDER=0 NAME="bt-t-4" ALT="F.A.Q." USEMAP="#bt-4"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-1.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD>
+		<IMG SRC="images/bt-5-2.gif" WIDTH=95 HEIGHT=25 BORDER=0 ALT="WZT On-Line" USEMAP="#bt-5"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=6><BR>
+		</TD>
+		<TD>
+		</TD>
+	</TR>
+	</TABLE>
+	</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH="620" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+	<TD HEIGHT="10" COLSPAN="5">
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="20" ALIGN="RIGHT">
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=60><IMG SRC="images/xtr-1.gif" WIDTH=1 HEIGHT=60><BR>
+	</TD>
+	<TD WIDTH="20">
+	<IMG SRC="images/xtr-0.gif" WIDTH=20 HEIGHT=60><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=59><IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=59><BR>
+	</TD>
+	<TD WIDTH="540" VALIGN="TOP" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=540 HEIGHT=1><BR>
+	<FONT FACE="Arial" SIZE="-1" COLOR="#111111">
+	<BR>
+	<FONT SIZE="" COLOR="#006699"><B>Formulário</B></FONT><BR><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=59><IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=59><BR>
+	</TD>
+</TR>
+<TR>
+	<TD ALIGN="RIGHT">
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=416><IMG SRC="images/xtr-1.gif" WIDTH=1 HEIGHT=416><BR>
+	</TD>
+	<TD>
+	<IMG SRC="images/xtr-0.gif" WIDTH=20 HEIGHT=416><BR>
+	</TD>
+	<TD BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=416><IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=416><BR>
+	</TD>
+	<TD BGCOLOR="#006699">
+	<TABLE WIDTH="540" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD>
+		<FORM ACTION="http://www.midiaweb.com.br/asp/form.asp" METHOD="POST">
+		<INPUT TYPE="HIDDEN" NAME="RECIPIENT" VALUE="sac@wzt.com.br">
+		<INPUT TYPE="HIDDEN" NAME="SUBJECT" VALUE="Formulário WZT">
+		<INPUT TYPE="HIDDEN" NAME="REDIRECT" VALUE="http://www.wzt.com.br/ok.htm">
+		<TABLE WIDTH="540" BORDER="0" CELLSPACING="1" CELLPADDING="0" BGCOLOR="#006699">
+		<TR>
+			<TD WIDTH="138" ALIGN="RIGHT" BGCOLOR="#006699">
+			<FONT FACE="Arial" COLOR="#FFFFFF" SIZE="-2">Nome:&nbsp;<BR></FONT>
+			</TD>
+			<TD WIDTH="399" BGCOLOR="#CCCCCC">
+			<FONT FACE="Arial"><INPUT TYPE="TEXT" NAME="Nome" SIZE=33 MAXLENGTH=70><BR>
+			</TD>
+		</TR>
+		<TR>
+			<TD ALIGN="RIGHT" BGCOLOR="#006699">
+			<FONT FACE="Arial" COLOR="#FFFFFF" SIZE="-2">Empresa:&nbsp;<BR></FONT>
+			</TD>
+			<TD BGCOLOR="#CCCCCC">
+			<FONT FACE="Arial"><INPUT TYPE="TEXT" NAME="Empresa" SIZE=33 MAXLENGTH=70><BR>
+			</TD>
+		</TR>
+		<TR>
+			<TD ALIGN="RIGHT" BGCOLOR="#006699">
+			<FONT FACE="Arial" SIZE="-2" COLOR="#FFFFFF">Cargo:&nbsp;<BR></FONT>
+			</TD>
+			<TD BGCOLOR="#CCCCCC">
+			<FONT FACE="Arial"><INPUT TYPE="TEXT" NAME="Cargo" SIZE=33 MAXLENGTH=70><BR>
+			</TD>
+		</TR>
+		<TR>
+			<TD ALIGN="RIGHT" BGCOLOR="#006699">
+			<FONT FACE="Arial" COLOR="#FFFFFF" SIZE="-2">CGC:&nbsp;<BR></FONT>
+			</TD>
+			<TD BGCOLOR="#CCCCCC">
+			<FONT FACE="Arial"><INPUT TYPE="TEXT" NAME="CGC" SIZE=33 MAXLENGTH=70><BR>
+			</TD>
+		</TR>
+		<TR>
+			<TD ALIGN="RIGHT" BGCOLOR="#006699">
+			<FONT FACE="Arial" COLOR="#FFFFFF" SIZE="-2">Endereço:&nbsp;<BR></FONT>
+			</TD>
+			<TD BGCOLOR="#CCCCCC">
+			<FONT FACE="Arial"><INPUT TYPE="TEXT" NAME="Endereço" SIZE=33 MAXLENGTH=70><BR>
+			</TD>
+		</TR>
+		<TR>
+			<TD ALIGN="RIGHT" BGCOLOR="#006699">
+			<FONT FACE="Arial" COLOR="#FFFFFF" SIZE="-2">Cidade, Estado e País:&nbsp;<BR></FONT>
+			</TD>
+			<TD BGCOLOR="#CCCCCC">
+			<FONT FACE="Arial"><INPUT TYPE="TEXT" NAME="Cidade, Estado e País" SIZE=33 MAXLENGTH=70><BR>
+			</TD>
+		</TR>
+		<TR>
+			<TD ALIGN="RIGHT" BGCOLOR="#006699">
+			<FONT FACE="Arial" COLOR="#FFFFFF" SIZE="-2">CEP:&nbsp;<BR></FONT>
+			</TD>
+			<TD BGCOLOR="#CCCCCC">
+			<FONT FACE="Arial"><INPUT TYPE="TEXT" NAME="CEP" SIZE=33 MAXLENGTH=70><BR>
+			</TD>
+		</TR>
+		<TR>
+			<TD ALIGN="RIGHT" BGCOLOR="#006699">
+			<FONT FACE="Arial" COLOR="#FFFFFF" SIZE="-2">E-Mail:&nbsp;<BR></FONT>
+			</TD>
+			<TD BGCOLOR="#CCCCCC">
+			<FONT FACE="Arial"><INPUT TYPE="TEXT" NAME="E-Mail" SIZE=33 MAXLENGTH=64><BR>
+			</TD>
+		</TR>
+		<TR>
+			<TD ALIGN="RIGHT" VALIGN="TOP" BGCOLOR="#006699">
+			<IMG SRC="images/xtr-0.gif" WIDTH="1" HEIGHT="3"><BR>
+			<FONT FACE="Arial" COLOR="#FFFFFF" SIZE="-2">Mensagem:&nbsp;<BR></FONT>
+			</TD>
+			<TD BGCOLOR="#CCCCCC">
+			<FONT FACE="Arial"><TEXTAREA NAME="Mensagem" COLS="33" ROWS="10" WRAP="VIRTUAL"></TEXTAREA></FONT><BR>
+			</TD>
+		</TR>
+		<TR>
+			<TD ALIGN="RIGHT" VALIGN="TOP" BGCOLOR="#006699">
+			<IMG SRC="images/xtr-0.gif" WIDTH="1" HEIGHT="3"><BR>
+			<FONT FACE="Arial" COLOR="#FFFFFF" SIZE="-2">Enviar:&nbsp;<BR></FONT>
+			</TD>
+			<TD BGCOLOR="#CCCCCC">
+			<FONT FACE="MS Sans Serif" SIZE="-2"><INPUT TYPE="SUBMIT" NAME="Enviar" VALUE="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"></FONT><BR>
+			</TD>
+		</TR>
+		</TABLE>
+		</TD>
+		</FORM>
+	</TR>
+	</TABLE>
+	</TD>
+	<TD WIDTH="20" ALIGN="RIGHT" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=416><BR>
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="20" ALIGN="RIGHT">
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=76><IMG SRC="images/xtr-1.gif" WIDTH=1 HEIGHT=76><BR>
+	</TD>
+	<TD WIDTH="20">
+	<IMG SRC="images/xtr-0.gif" WIDTH=20 HEIGHT=76><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=76><IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=76><BR>
+	</TD>
+	<TD WIDTH="540" VALIGN="TOP" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-0.gif" WIDTH=540 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=76><IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=76><BR>
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="20" ALIGN="RIGHT">
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=1><IMG SRC="images/xtr-1.gif" WIDTH=1 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="20">
+	<IMG SRC="images/xtr-0.gif" WIDTH=20 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="540" VALIGN="TOP" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=540 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	</TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+	<TD>
+	<IMG SRC="images/xtr-2.gif" WIDTH=20 HEIGHT=80><BR>
+	</TD>
+	<TD>
+	<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=1><BR>
+	</TD>
+	<TD VALIGN="BOTTOM">
+	<IMG SRC="images/lg-3.gif" WIDTH=170 HEIGHT=35 BORDER=0 ALT="Index" USEMAP="#index"><BR>
+	</TD>
+	<TD ALIGN="RIGHT" VALIGN="BOTTOM">
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=14><BR>
+	<IMG SRC="images/bt-0-3.gif" WIDTH=10 HEIGHT=6><BR>
+	<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=10><BR>
+	</TD>
+	<TD VALIGN="BOTTOM">
+	<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-1-0.gif" WIDTH=89 HEIGHT=20 BORDER=0 NAME="bt-b-1" ALT="A Empresa" USEMAP="#bt-1"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-2-0.gif" WIDTH=79 HEIGHT=20 BORDER=0 NAME="bt-b-2" ALT="Serviços" USEMAP="#bt-2"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-3-0.gif" WIDTH=77 HEIGHT=20 BORDER=0 NAME="bt-b-3" ALT="Clientes" USEMAP="#bt-3"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-4-0.gif" WIDTH=55 HEIGHT=20 BORDER=0 NAME="bt-b-4" ALT="F.A.Q." USEMAP="#bt-4"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-2.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD>
+		<IMG SRC="images/bt-5-3.gif" WIDTH=95 HEIGHT=25 BORDER=0 ALT="WZT On-Line" USEMAP="#bt-5"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=6><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="10" COLSPAN="10">
+		</TD>
+	</TR>
+	</TABLE>
+	</TD>
+</TR>
+</TABLE>
+</DIV>
+</BODY>
+</HTML>

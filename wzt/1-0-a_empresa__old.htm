@@ -1,0 +1,527 @@
+<HTML><HEAD><TITLE>WZT A Empresa</TITLE></HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+browser_name = navigator.appName;
+function Status(source,image,sourcex,imagex)
+{
+	if (browser_name == "Microsoft Internet Explorer")
+	{
+		document.images[source].src = "images/"+image + ".gif";
+		document.images[sourcex].src = "images/"+imagex + ".gif";
+	}
+	else
+	{
+		document.layers['Layer1'].document.images[source].src = "images/"+image + ".gif";
+		document.layers['Layer1'].document.images[sourcex].src = "images/"+imagex + ".gif";
+	}
+}
+function OnLine()
+{
+	if (browser_name == "Microsoft Internet Explorer")
+	{
+		document.location = "5-0-wzt_on-line.htm";
+	}
+	else
+	{
+		document.location = "5-0-wzt_on-line_netscape.htm";
+	}
+}
+</SCRIPT>
+<BODY BACKGROUND="images/bg-1.jpg" BGPROPERTIES="FIXED">
+<BASEFONT SIZE="-1" FACE="Arial">
+<MAP NAME="index"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="index.htm"></MAP>
+<MAP NAME="bt-1"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="1-0-a_empresa.htm"></MAP>
+<MAP NAME="bt-2"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="2-0-servicos.htm" ONMOUSEOVER="Status('bt-t-2','bt-2-1','bt-b-2','bt-2-1')" ONMOUSEOUT="Status('bt-t-2','bt-2-0','bt-b-2','bt-2-0')"></MAP>
+<MAP NAME="bt-3"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="#"></MAP>
+<MAP NAME="bt-4"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="4-0-faq.htm" ONMOUSEOVER="Status('bt-t-4','bt-4-1','bt-b-4','bt-4-1')" ONMOUSEOUT="Status('bt-t-4','bt-4-0','bt-b-4','bt-4-0')"></MAP>
+<MAP NAME="bt-5"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="javascript:OnLine()" ONMOUSEOVER="Status('bt-t-5','bt-5-1','bt-b-5','bt-5-1')" ONMOUSEOUT="Status('bt-t-5','bt-5-0','bt-b-5','bt-5-0')"></MAP>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+function doThisCommandEveryIntervalMS(command, interval)
+{
+	setInterval(eval('"' + command + '"'), interval);
+}
+function getWindowWidth()
+{
+	return window.innerWidth
+}
+function getWindowHeight()
+{
+	return window.innerHeight
+}
+function getPageScrollLeft()
+{
+	return window.pageXOffset
+}
+function getPageScrollTop()
+{
+	return window.pageYOffset
+}
+function setPosFromLeft(xCoord)
+{
+	eval("document.bg").left = xCoord
+}
+function setPosFromTop(yCoord)
+{
+	eval("document.bg").top = yCoord
+}
+function makeLinkedImage()
+{
+	document.write(
+	'<A HREF="', "", '"><STYLE TYPE="text/css"> #bg {position:absolute; z-index:1}</STYLE><DIV ID="bg"><IMG SRC="images/bg-1.jpg"></DIV>');
+}
+// '
+</SCRIPT>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+var windowWidth=0;
+var windowHeight=0;
+var pageScrollLeft=0;
+var pageScrollTop=0;
+function waterMark()
+{
+	if (navigator.appVersion.indexOf("Mac") == -1 && navigator.appName.indexOf("Microsoft Internet Explorer") == -1)
+	{
+		oldWindowWidth = windowWidth;
+		oldWindowHeight = windowHeight;
+		oldPageScrollLeft = pageScrollLeft;
+		oldPageScrollTop = pageScrollTop;
+		windowWidth = getWindowWidth();
+		windowHeight = getWindowHeight();
+		pageScrollLeft = getPageScrollLeft();
+		pageScrollTop = getPageScrollTop();
+		if ((windowHeight != oldWindowHeight)||(windowWidth != oldWindowWidth)||(pageScrollLeft != oldPageScrollLeft)||(pageScrollTop != oldPageScrollTop))
+		{
+			setPosFromTop(pageScrollTop);
+			setPosFromLeft(pageScrollLeft);
+		}
+	}
+}
+if (navigator.appVersion.indexOf("Mac") == -1 && navigator.appName.indexOf("Microsoft Internet Explorer") == -1)
+{
+	makeLinkedImage();
+	doThisCommandEveryIntervalMS("waterMark()", 100);
+}
+</SCRIPT>
+<DIV ID="Layer1" STYLE="position:absolute; left:0px; top:0px; z-index:2">
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+	<TD>
+	<IMG SRC="images/lg-1.gif" WIDTH=200 HEIGHT=85 BORDER=0 ALT="Index" USEMAP="#index"><BR>
+	</TD>
+	<TD VALIGN="TOP">
+	<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=25><BR>
+	<IMG SRC="images/bt-0-3.gif" WIDTH=10 HEIGHT=6><BR>
+	</TD>
+	<TD VALIGN="TOP">
+	<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD COLSPAN="10" BGCOLOR="#999999">
+		<IMG SRC="images/lg-2.gif" WIDTH=193 HEIGHT=15><BR>
+		</TD>
+		<TD BGCOLOR="#333333">
+		<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=1><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="10" COLSPAN="11">
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+		<IMG SRC="images/bt-1-2.gif" WIDTH=89 HEIGHT=25 BORDER=0 ALT="A Empresa" USEMAP="#bt-1"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-1.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-2-0.gif" WIDTH=79 HEIGHT=20 BORDER=0 NAME="bt-t-2" ALT="Serviços" USEMAP="#bt-2"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-3-0.gif" WIDTH=77 HEIGHT=20 BORDER=0 NAME="bt-t-3" ALT="Clientes" USEMAP="#bt-3"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-4-0.gif" WIDTH=55 HEIGHT=20 BORDER=0 NAME="bt-t-4" ALT="F.A.Q." USEMAP="#bt-4"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-5-0.gif" WIDTH=95 HEIGHT=20 BORDER=0 NAME="bt-t-5" ALT="WZT On-Line" USEMAP="#bt-5"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD>
+		</TD>
+	</TR>
+	</TABLE>
+	</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH="620" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+	<TD HEIGHT="10" COLSPAN="5">
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="20" ALIGN="RIGHT">
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=1037><IMG SRC="images/xtr-1.gif" WIDTH=1 HEIGHT=1037><BR>
+	</TD>
+	<TD WIDTH="20">
+	<IMG SRC="images/xtr-0.gif" WIDTH=20 HEIGHT=1037><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=1036><IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=1036><BR>
+	</TD>
+	<TD WIDTH="540" VALIGN="TOP" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=540 HEIGHT=1><BR>
+	<FONT FACE="Arial" SIZE="-1" COLOR="#111111">
+	<BR>
+	<FONT SIZE="" COLOR="#006699"><B>Institucional</B></FONT><BR><BR>
+	
+	A <B><I>WZT</I> Transportes de Conveniência</B> é uma jovem empresa. Surgiu há cinco anos, num momento de profunda transformação estrutural (e cultural) desta atividade. O improviso como metodologia cede lugar à disciplina, à presteza e ao atendimento personalizado.<BR><BR>
+
+	<IMG SRC="images/ft-1.jpg" WIDTH=200 HEIGHT=150 ALIGN="RIGHT" HSPACE=10 VSPACE=5>O uso maciço de tecnologia, a (lenta) recuperação das nossas estradas e a profissionalização do setor inserem a atividade transportadora no cenário da globalização.<BR><BR>
+
+	Um processo que exige eficácia, terceirização, parceria.<BR><BR>
+
+	Este <I>feeling</I> direcionou nossa atuação a um segmento a princípio inesperado: trabalhamos somente para quem entende de transporte.<BR><BR>
+
+	Suprimos necessidades específicas de clientes corporativos ou particulares nas áreas de logística e transporte.<BR><BR>
+
+	Potencialmente, já somos seu parceiro.<BR><BR>
+
+	Às ordens.<BR><BR><BR><BR>
+	
+	
+	<FONT SIZE="" COLOR="#006699"><B>Compromisso</B></FONT><BR><BR>
+
+	Nossa referência é o transporte aéreo. Mas nosso compromisso é superá-lo em regularidade e na qualidade do atendimento, a uma relação custo benefício compatível com as novas realidades do mercado.<BR><BR>
+
+	A saída dos nossos carros é acertada pelos relógios. Mesmo que levem apenas um envelope!<BR><BR>
+
+	Não armazenamos sua carga porque ela viaja no mesmo dia da coleta; Impreterivelmente! A menos que você prefira adiar o despacho.<BR><BR><BR><BR>
+
+	
+	<FONT SIZE="" COLOR="#006699"><B>Estrutura</B></FONT><BR><BR>
+
+	É modular, "enxuta, à conveniência das demandas locais da clientela.<BR><BR>
+
+	Estamos estruturados para atender o cliente quando a razão custo benefício de determinados fretes (1,0kg a 7,0ton.) de média distância não for compensadora para ele próprio efetuar.<BR><BR> 
+
+	Nosso pessoal é treinado, a frota é própria, nova e diversificada. Somente veículos ágeis e leves permanentemente revisados.<BR><BR>
+
+	Sempre um carro reserva! Sempre espaço para sua carga! Pronto atendimento.<BR><BR>
+
+	Não transportamos containers, cargas perigosas ou de circulação restrita. Não agregamos veículos de terceiros.<BR><BR>
+
+	Acompanhe "on line" o "status" de seu embarque.(banner na própria home page ????)<BR><BR><BR><BR>
+
+
+	<FONT SIZE="" COLOR="#006699"><B>Frota</B></FONT><BR><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=1036><IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=1036><BR>
+	</TD>
+</TR>
+<TR>
+	<TD ALIGN="RIGHT">
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=190><IMG SRC="images/xtr-1.gif" WIDTH=1 HEIGHT=190><BR>
+	</TD>
+	<TD>
+	<IMG SRC="images/xtr-0.gif" WIDTH=20 HEIGHT=190><BR>
+	</TD>
+	<TD BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=190><IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=190><BR>
+	</TD>
+	<TD BGCOLOR="#006699">
+	<TABLE WIDTH="540" BORDER="0" CELLSPACING="1" CELLPADDING="0" BGCOLOR="#006699">
+	<TR>
+		<TD HEIGHT="20" BGCOLOR="#006699">
+		<FONT FACE="Arial" SIZE="-2" COLOR="#FFFFFF">&nbsp;Quant.</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#006699">
+		<FONT FACE="Arial" SIZE="-2" COLOR="#FFFFFF">&nbsp;Tipo</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#006699">
+		<FONT FACE="Arial" SIZE="-2" COLOR="#FFFFFF">&nbsp;Marca</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#006699">
+		<FONT FACE="Arial" SIZE="-2" COLOR="#FFFFFF">&nbsp;Modelo</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#006699">
+		<FONT FACE="Arial" SIZE="-2" COLOR="#FFFFFF">&nbsp;Ano</FONT><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="20" BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Caminhão</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Volkswagen</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;12-140</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1998</FONT><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="20" BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;2</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Caminhão</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Volkswagen</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;12-170</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1999</FONT><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="20" BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Caminhão</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Volkswagen</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;8-140</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1997</FONT><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="20" BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Caminhão</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Ford</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;12-15</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1998</FONT><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="20" BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Caminhão</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Iveco</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;4910</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1998</FONT><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="20" BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Camionete</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Fiat</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Fiorino</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1995</FONT><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="20" BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Furgão</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Renaultt</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Express</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1999</FONT><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="20" BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Furgão</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;Mercedes Benz</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;MB 180D</FONT><BR>
+		</TD>
+		<TD BGCOLOR="#FFFFFF">
+		<FONT FACE="Arial" SIZE="-1">&nbsp;1995</FONT><BR>
+		</TD>
+	</TR>
+	</TABLE>
+	</TD>
+	<TD WIDTH="20" ALIGN="RIGHT" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=190><BR>
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="20" ALIGN="RIGHT">
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=525><IMG SRC="images/xtr-1.gif" WIDTH=1 HEIGHT=525><BR>
+	</TD>
+	<TD WIDTH="20">
+	<IMG SRC="images/xtr-0.gif" WIDTH=20 HEIGHT=525><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=525><IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=525><BR>
+	</TD>
+	<TD WIDTH="540" VALIGN="TOP" BACKGROUND="images/bg-3.gif">
+	<FONT FACE="Arial" SIZE="-1" COLOR="#111111">
+	<BR><BR><BR>
+	<FONT SIZE="" COLOR="#006699"><B>Expediente</B></FONT><BR><BR>
+
+	<B>WZT Transportes de Conveniência</B><BR><BR>
+
+	Rua Vapabuçu, 869, Jardim Aeroporto<BR>
+	Telefax: (011) 530 8367
+	CEP: 04263 011<BR>
+	São Paulo - SP<BR>
+	E-Mail: ztccargo@mandic.com.br<BR><BR><BR>
+
+
+	<B>Filial Curitiba:</B><BR><BR>
+
+	Av. Sen. Salgado Filho, 5428, Sls. 03 e 04<BR>
+	CEP 81570 000
+	Telefax: (041) 276 5753<BR>
+	Curitiba - Paraná<BR>
+	E-Mail: ztccwb@mandic.com.br<BR><BR><BR>
+
+
+ 	<B>Razão Social:</B><BR><BR>
+	
+	ZTC Cargas e Despachos Ltda.<BR><BR><BR>
+	
+	<B>Diretoria:</B><BR><BR>
+	
+	Walter Zampronha, Gláucio Antônio de Lucena, Waldir Zampronha e Wilton Zampronha.<BR><BR><BR><BR>
+	</FONT>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=525><IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=525><BR>
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="20" ALIGN="RIGHT">
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=1><IMG SRC="images/xtr-1.gif" WIDTH=1 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="20">
+	<IMG SRC="images/xtr-0.gif" WIDTH=20 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="540" VALIGN="TOP" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=540 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	</TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+	<TD>
+	<IMG SRC="images/xtr-2.gif" WIDTH=20 HEIGHT=80><BR>
+	</TD>
+	<TD>
+	<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=1><BR>
+	</TD>
+	<TD VALIGN="BOTTOM">
+	<IMG SRC="images/lg-3.gif" WIDTH=170 HEIGHT=35 BORDER=0 ALT="Index" USEMAP="#index"><BR>
+	</TD>
+	<TD VALIGN="BOTTOM">
+	<IMG SRC="images/bt-0-3.gif" WIDTH=10 HEIGHT=6><BR>
+	<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=10><BR>
+	</TD>
+	<TD VALIGN="BOTTOM">
+	<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD>
+		<IMG SRC="images/bt-1-3.gif" WIDTH=89 HEIGHT=25 BORDER=0 NAME="bt-b-1" ALT="A Empresa" USEMAP="#bt-1"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-2.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-2-0.gif" WIDTH=79 HEIGHT=20 BORDER=0 NAME="bt-b-2" ALT="Serviços" USEMAP="#bt-2"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-3-0.gif" WIDTH=77 HEIGHT=20 BORDER=0 NAME="bt-b-3" ALT="Clientes" USEMAP="#bt-3"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-4-0.gif" WIDTH=55 HEIGHT=20 BORDER=0 NAME="bt-b-4" ALT="F.A.Q." USEMAP="#bt-4"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-5-0.gif" WIDTH=95 HEIGHT=20 BORDER=0 NAME="bt-b-5" ALT="WZT On-Line" USEMAP="#bt-5"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="10" COLSPAN="10">
+		</TD>
+	</TR>
+	</TABLE>
+	</TD>
+</TR>
+</TABLE>
+</DIV>
+</BODY>
+</HTML>

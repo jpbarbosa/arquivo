@@ -1,0 +1,291 @@
+<HTML><HEAD><TITLE>WZT F.A.Q.</TITLE></HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+browser_name = navigator.appName;
+function Status(source,image,sourcex,imagex)
+{
+	if (browser_name == "Microsoft Internet Explorer")
+	{
+		document.images[source].src = "images/"+image + ".gif";
+		document.images[sourcex].src = "images/"+imagex + ".gif";
+	}
+	else
+	{
+		document.layers['Layer1'].document.images[source].src = "images/"+image + ".gif";
+		document.layers['Layer1'].document.images[sourcex].src = "images/"+imagex + ".gif";
+	}
+}
+function OnLine()
+{
+	if (browser_name == "Microsoft Internet Explorer")
+	{
+		document.location = "5-0-wzt_on-line.htm";
+	}
+	else
+	{
+		document.location = "5-0-wzt_on-line_netscape.htm";
+	}
+}
+</SCRIPT>
+<BODY BACKGROUND="images/bg-1.jpg" BGPROPERTIES="FIXED">
+<BASEFONT SIZE="-1" FACE="Arial">
+<MAP NAME="index"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="index.htm"></MAP>
+<MAP NAME="bt-1"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="1-0-a_empresa.htm" ONMOUSEOVER="Status('bt-t-1','bt-1-1','bt-b-1','bt-1-1')" ONMOUSEOUT="Status('bt-t-1','bt-1-0','bt-b-1','bt-1-0')"></MAP>
+<MAP NAME="bt-2"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="2-0-servicos.htm" ONMOUSEOVER="Status('bt-t-2','bt-2-1','bt-b-2','bt-2-1')" ONMOUSEOUT="Status('bt-t-2','bt-2-0','bt-b-2','bt-2-0')"></MAP>
+<MAP NAME="bt-3"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="#"></MAP>
+<MAP NAME="bt-4"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="4-0-faq.htm"></MAP>
+<MAP NAME="bt-5"><AREA SHAPE="CIRCLE" COORDS="1,1,10000" HREF="javascript:OnLine()" ONMOUSEOVER="Status('bt-t-5','bt-5-1','bt-b-5','bt-5-1')" ONMOUSEOUT="Status('bt-t-5','bt-5-0','bt-b-5','bt-5-0')"></MAP>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+function doThisCommandEveryIntervalMS(command, interval)
+{
+	setInterval(eval('"' + command + '"'), interval);
+}
+function getWindowWidth()
+{
+	return window.innerWidth
+}
+function getWindowHeight()
+{
+	return window.innerHeight
+}
+function getPageScrollLeft()
+{
+	return window.pageXOffset
+}
+function getPageScrollTop()
+{
+	return window.pageYOffset
+}
+function setPosFromLeft(xCoord)
+{
+	eval("document.bg").left = xCoord
+}
+function setPosFromTop(yCoord)
+{
+	eval("document.bg").top = yCoord
+}
+function makeLinkedImage()
+{
+	document.write(
+	'<A HREF="', "", '"><STYLE TYPE="text/css"> #bg {position:absolute; z-index:1}</STYLE><DIV ID="bg"><IMG SRC="images/bg-1.jpg"></DIV>');
+}
+// '
+</SCRIPT>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+var windowWidth=0;
+var windowHeight=0;
+var pageScrollLeft=0;
+var pageScrollTop=0;
+function waterMark()
+{
+	if (navigator.appVersion.indexOf("Mac") == -1 && navigator.appName.indexOf("Microsoft Internet Explorer") == -1)
+	{
+		oldWindowWidth = windowWidth;
+		oldWindowHeight = windowHeight;
+		oldPageScrollLeft = pageScrollLeft;
+		oldPageScrollTop = pageScrollTop;
+		windowWidth = getWindowWidth();
+		windowHeight = getWindowHeight();
+		pageScrollLeft = getPageScrollLeft();
+		pageScrollTop = getPageScrollTop();
+		if ((windowHeight != oldWindowHeight)||(windowWidth != oldWindowWidth)||(pageScrollLeft != oldPageScrollLeft)||(pageScrollTop != oldPageScrollTop))
+		{
+			setPosFromTop(pageScrollTop);
+			setPosFromLeft(pageScrollLeft);
+		}
+	}
+}
+if (navigator.appVersion.indexOf("Mac") == -1 && navigator.appName.indexOf("Microsoft Internet Explorer") == -1)
+{
+	makeLinkedImage();
+	doThisCommandEveryIntervalMS("waterMark()", 100);
+}
+</SCRIPT>
+<DIV ID="Layer1" STYLE="position:absolute; left:0px; top:0px; z-index:2">
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+	<TD>
+	<IMG SRC="images/lg-1.gif" WIDTH=200 HEIGHT=85 BORDER=0 ALT="Index" USEMAP="#index"><BR>
+	</TD>
+	<TD ALIGN="RIGHT" VALIGN="TOP">
+	<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=25><BR>
+	<IMG SRC="images/bt-0-3.gif" WIDTH=10 HEIGHT=6><BR>
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=14><BR>
+	</TD>
+	<TD VALIGN="TOP">
+	<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD COLSPAN="10" BGCOLOR="#999999">
+		<IMG SRC="images/lg-2.gif" WIDTH=193 HEIGHT=15><BR>
+		</TD>
+		<TD BGCOLOR="#333333">
+		<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=1><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="10" COLSPAN="11">
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-1-0.gif" WIDTH=89 HEIGHT=20 BORDER=0 NAME="bt-t-1" ALT="A Empresa" USEMAP="#bt-1"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-2-0.gif" WIDTH=79 HEIGHT=20 BORDER=0 NAME="bt-t-2" ALT="Serviços" USEMAP="#bt-2"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-3-0.gif" WIDTH=77 HEIGHT=20 BORDER=0 NAME="bt-t-3" ALT="Clientes" USEMAP="#bt-3"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-1.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD>
+		<IMG SRC="images/bt-4-2.gif" WIDTH=55 HEIGHT=25 BORDER=0 ALT="F.A.Q." USEMAP="#bt-4"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-0-1.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/bt-5-0.gif" WIDTH=95 HEIGHT=20 BORDER=0 NAME="bt-t-5" ALT="WZT On-Line" USEMAP="#bt-5"><BR>
+		</TD>
+		<TD VALIGN="TOP">
+		<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD>
+		</TD>
+	</TR>
+	</TABLE>
+	</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH="620" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+	<TD HEIGHT="10" COLSPAN="5">
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="20" ALIGN="RIGHT">
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=552><IMG SRC="images/xtr-1.gif" WIDTH=1 HEIGHT=552><BR>
+	</TD>
+	<TD WIDTH="20">
+	<IMG SRC="images/xtr-0.gif" WIDTH=20 HEIGHT=552><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=551><IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=551><BR>
+	</TD>
+	<TD WIDTH="540" VALIGN="TOP" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=540 HEIGHT=1><BR>
+	<FONT FACE="Arial" SIZE="-1" COLOR="#111111">
+	<BR>
+	<FONT SIZE="" COLOR="#006699"><B>Perguntas Freqüentes</B></FONT><BR><BR>
+
+	<B>As cargas ou encomendas despachadas hoje, por exemplo do Rio de Janeiro, chegam a São Paulo amanhã?</B><BR>
+
+	Sim, o mesmo ocorrendo, nos dois sentidos, com embarques de Belo Horizonte, Curitiba e Florianópolis. Também atendemos neste mesmo ritmo o litoral de Santa Catarina ao norte da capital.<BR><BR>
+
+	<B>Qual o cálculo de cubagem praticado?</B><BR>
+
+	O mesmo das companhias aéreas, à razão de 167,0kg por metro cúbico. Só para comparar, a cubagem de praxe do transporte rodoviário é de 300kg por metro cúbico; quase o dobro.<BR><BR>
+
+	<B>Qual a difrença entre o serviço de vocês e o transporte convencional?</B><BR>
+
+	O feeling da urgência! Todo nosso planejamento logístico é orientado para reduzir o período em que sua encomenda permaneça conosco. É a consciência de que somos uma ponte (móvel, deslizante) entre o embarcador e o destinatário final.<BR><BR>
+
+	<B>Porque os veículos da WZT não são identificados como tal?</B><BR>
+
+	Pela certeza de que a política da discrição e do sigilo com que trabalhamos é a grande responsável pelo nosso sucesso.<BR>
+
+	A propaganda "boca-a-boca" nos auxiliou fundamentalmente. Não temos um depto comercial específico e este site é nossa primeira experiência em termos de uma publicidade institucional.<BR><BR><BR><BR>
+
+	</FONT>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=551><IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=551><BR>
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="20" ALIGN="RIGHT">
+	<IMG SRC="images/xtr-0.gif" WIDTH=19 HEIGHT=1><IMG SRC="images/xtr-1.gif" WIDTH=1 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="20">
+	<IMG SRC="images/xtr-0.gif" WIDTH=20 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="540" VALIGN="TOP" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=540 HEIGHT=1><BR>
+	</TD>
+	<TD WIDTH="20" BACKGROUND="images/bg-3.gif">
+	<IMG SRC="images/xtr-3.gif" WIDTH=20 HEIGHT=1><BR>
+	</TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+	<TD>
+	<IMG SRC="images/xtr-2.gif" WIDTH=20 HEIGHT=80><BR>
+	</TD>
+	<TD>
+	<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=1><BR>
+	</TD>
+	<TD VALIGN="BOTTOM">
+	<IMG SRC="images/lg-3.gif" WIDTH=170 HEIGHT=35 BORDER=0 ALT="Index" USEMAP="#index"><BR>
+	</TD>
+	<TD ALIGN="RIGHT" VALIGN="BOTTOM">
+	<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=14><BR>
+	<IMG SRC="images/bt-0-3.gif" WIDTH=10 HEIGHT=6><BR>
+	<IMG SRC="images/xtr-0.gif" WIDTH=10 HEIGHT=10><BR>
+	</TD>
+	<TD VALIGN="BOTTOM">
+	<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-1-0.gif" WIDTH=89 HEIGHT=20 BORDER=0 NAME="bt-b-1" ALT="A Empresa" USEMAP="#bt-1"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-2-0.gif" WIDTH=79 HEIGHT=20 BORDER=0 NAME="bt-b-2" ALT="Serviços" USEMAP="#bt-2"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-0.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-3-0.gif" WIDTH=77 HEIGHT=20 BORDER=0 NAME="bt-b-3" ALT="Clientes" USEMAP="#bt-3"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-2.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD>
+		<IMG SRC="images/bt-4-3.gif" WIDTH=55 HEIGHT=25 BORDER=0 ALT="F.A.Q." USEMAP="#bt-4"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-0-2.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/bt-5-0.gif" WIDTH=95 HEIGHT=20 BORDER=0 NAME="bt-b-5" ALT="WZT On-Line" USEMAP="#bt-5"><BR>
+		</TD>
+		<TD VALIGN="BOTTOM">
+		<IMG SRC="images/xtr-3.gif" WIDTH=1 HEIGHT=20><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="10" COLSPAN="10">
+		</TD>
+	</TR>
+	</TABLE>
+	</TD>
+</TR>
+</TABLE>
+</DIV>
+</BODY>
+</HTML>

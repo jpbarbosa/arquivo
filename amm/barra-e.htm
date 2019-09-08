@@ -1,0 +1,45 @@
+<HTML>
+<HEAD><TITLE>AMM</TITLE></HEAD>
+<SCRIPT language="javascript">
+function status(source,imagem,txtsource,txtimagem)
+{
+	document.images[source].src = "images/"+imagem + ".jpg";
+	document.images[txtsource].src = "images/"+txtimagem + ".jpg";
+}
+function timetec()
+{
+	desktop = window.open('http://www.timetec.com.br', 'Timetec', 'resizable,status');
+}
+</SCRIPT>
+<BODY BGCOLOR="#003366" BACKGROUND="images/barra-v.jpg">
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 HEIGHT=100%>
+<TR><TD VALIGN=Bottom>
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=210 HEIGHT=110>
+<TD WIDTH=60 ALIGN=Right VALIGN=Top>
+<IMG SRC="images/barra-b.jpg" NAME="a1" WIDTH=20 HEIGHT=20 BORDER=0><BR>
+<IMG SRC="images/barra-a.jpg" NAME="a2" WIDTH=20 HEIGHT=20 BORDER=0><BR>
+<IMG SRC="images/barra-b.jpg" NAME="a3" WIDTH=20 HEIGHT=20 BORDER=0><BR>
+<IMG SRC="images/barra-b.jpg" NAME="a4" WIDTH=20 HEIGHT=20 BORDER=0><BR>
+<IMG SRC="images/barra-b.jpg" NAME="a5" WIDTH=20 HEIGHT=20 BORDER=0><BR>
+</TD>
+<TD WIDTH=150 ALIGN=Left VALIGN=Top><IMG SRC="images/barra-m.jpg" WIDTH=80 HEIGHT=100 BORDER=0 USEMAP="#Map"><BR>
+<MAP NAME="Map">
+<AREA SHAPE="RECT" COORDS="0,0,80,20" HREF="index-0.htm" TARGET="_parent" onMouseOver=status("a2","barra-b","a1","barra-a") onMouseOut=status("a2","barra-a","a1","barra-b")>
+<AREA SHAPE="RECT" COORDS="0,20,80,40" HREF="empre-0.htm" TARGET="_parent">
+<AREA SHAPE="RECT" COORDS="0,40,80,60" HREF="produ-0.htm" TARGET="_parent" onMouseOver=status("a2","barra-b","a3","barra-a") onMouseOut=status("a2","barra-a","a3","barra-b")>
+<AREA SHAPE="RECT" COORDS="0,60,80,80" HREF="conta-0.htm" TARGET="_parent" onMouseOver=status("a2","barra-b","a4","barra-a") onMouseOut=status("a2","barra-a","a4","barra-b")>
+<AREA SHAPE="RECT" COORDS="0,80,80,110" HREF="mailto:ammm@netpar.com.br" onMouseOver=status("a2","barra-b","a5","barra-a") onMouseOut=status("a2","barra-a","a5","barra-b")>
+</MAP>
+</TD>
+</TR>
+</TABLE>
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=210 HEIGHT=30>
+<TR>
+<TD WIDTH=40></TD>
+<TD WIDTH=170 ALIGN=Left VALIGN=Top><A HREF="JavaScript:timetec()"><IMG SRC="images/barra-t.jpg" WIDTH=120 HEIGHT=20 BORDER=0><BR></A></TD>
+</TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+</BODY>
+</HTML>

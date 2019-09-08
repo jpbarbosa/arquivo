@@ -1,0 +1,91 @@
+<HTML><HEAD><TITLE>Madeireira Varaschin</TITLE></HEAD>
+<SCRIPT LANGUAGE="javascript">
+browser_name = navigator.appName;
+browser_version = parseFloat(navigator.appVersion);
+if (browser_name == "Microsoft Internet Explorer" && browser_version >= 4.0) { load = 'true'; }
+else { load = 'false'; }
+if (load == 'true')
+{
+	b1=new Image(80,15);b1.src="images/buttons/bot-1-1.gif";
+	b2=new Image(80,15);b2.src="images/buttons/bot-2-1.gif";
+	b3=new Image(80,15);b3.src="images/buttons/bot-3-1.gif";
+	b4=new Image(80,15);b4.src="images/buttons/bot-4-1.gif";
+	b5=new Image(80,15);b5.src="images/buttons/bot-5-1.gif";
+	b6=new Image(80,15);b6.src="images/buttons/bot-6-1.gif";
+}
+function status(source,imagem,txtsource,txtimagem)
+{
+	document.images[source].src = "images/buttons/"+imagem + ".gif";
+}
+function bot1()
+{
+	parent.parent.frames[1].frames[2].frames[1].location = "col-2-3-2-1.htm"
+	parent.parent.frames[1].frames[2].frames[0].location = "col-2-3-1-1.htm"
+	self.location = "row-1-2-1.htm";
+}
+function bot2()
+{
+	parent.parent.frames[1].frames[2].frames[1].location = "col-2-3-2-2.htm"
+	parent.parent.frames[1].frames[2].frames[0].location = "col-2-3-1-2.htm"
+	self.location = "row-1-2-2.htm";
+}
+function bot3()
+{
+	parent.parent.frames[1].frames[2].frames[1].location = "col-2-3-2-3.htm"
+	parent.parent.frames[1].frames[2].frames[0].location = "col-2-3-1-3.htm"
+	self.location = "row-1-2-3.htm";
+}
+function bot4()
+{
+	parent.parent.frames[1].frames[2].frames[1].location = "col-2-3-2-4.htm"
+	parent.parent.frames[1].frames[2].frames[0].location = "col-2-3-1-4.htm"
+	self.location = "row-1-2-4.htm";
+}
+function bot5()
+{
+	parent.parent.frames[1].frames[2].frames[1].location = "col-2-3-2-5.htm"
+	parent.parent.frames[1].frames[2].frames[0].location = "col-2-3-1-5.htm"
+	self.location = "row-1-2-5.htm";
+}
+function bot6()
+{
+	parent.parent.frames[1].frames[2].frames[1].location = "col-2-3-2-6.htm"
+	parent.parent.frames[1].frames[2].frames[0].location = "col-2-3-1-6.htm"
+	self.location = "row-1-2-6.htm";
+}
+</SCRIPT>
+<BODY BGCOLOR="#000000" LEFTMARGIN=0 TOPMARGIN=0 BACKGROUND="images/backgrounds/row-1-2.jpg">
+<TABLE WIDTH="140" HEIGHT="210" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD WIDTH="30"></TD>
+		<TD WIDTH="80" HEIGHT="35"><IMG SRC="images/buttons/bot-0-1.gif" NAME=bot-1 WIDTH=80 HEIGHT=15 BORDER=0 USEMAP="#bot-1"><MAP NAME="bot-1"><AREA SHAPE="Rect" COORDS="0,0,80,15" HREF="javascript:bot1()" onMouseOver=status("bot-1","bot-1-1") onMouseOut=status("bot-1","bot-0-1")></MAP></TD>
+		<TD WIDTH="30"></TD>
+	</TR>
+	<TR>
+		<TD></TD>
+		<TD HEIGHT="35"><IMG SRC="images/buttons/bot-0-1.gif" NAME=bot-2 WIDTH=80 HEIGHT=15 BORDER=0 USEMAP="#bot-2"><MAP NAME="bot-2"><AREA SHAPE="Rect" COORDS="0,0,80,15" HREF="javascript:bot2()" onMouseOver=status("bot-2","bot-2-1") onMouseOut=status("bot-2","bot-0-1")></MAP></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD></TD>
+		<TD HEIGHT="35"><IMG SRC="images/buttons/bot-0-1.gif" NAME=bot-3 WIDTH=80 HEIGHT=15 BORDER=0 USEMAP="#bot-3"><MAP NAME="bot-3"><AREA SHAPE="Rect" COORDS="0,0,80,15" HREF="javascript:bot3()" onMouseOver=status("bot-3","bot-3-1") onMouseOut=status("bot-3","bot-0-1")></MAP></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD></TD>
+		<TD HEIGHT="35"><IMG SRC="images/buttons/bot-0-1.gif" NAME=bot-4 WIDTH=80 HEIGHT=15 BORDER=0 USEMAP="#bot-4"><MAP NAME="bot-4"><AREA SHAPE="Rect" COORDS="0,0,80,15" HREF="javascript:bot4()" onMouseOver=status("bot-4","bot-4-1") onMouseOut=status("bot-4","bot-0-1")></MAP></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD></TD>
+		<TD HEIGHT="35"><IMG SRC="images/buttons/bot-0-1.gif" NAME=bot-5 WIDTH=80 HEIGHT=15 BORDER=0 USEMAP="#bot-5"><MAP NAME="bot-5"><AREA SHAPE="Rect" COORDS="0,0,80,15" HREF="javascript:bot5()" onMouseOver=status("bot-5","bot-5-1") onMouseOut=status("bot-5","bot-0-1")></MAP></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD></TD>
+		<TD HEIGHT="35"><IMG SRC="images/buttons/bot-0-1.gif" NAME=bot-6 WIDTH=80 HEIGHT=15 BORDER=0 USEMAP="#bot-6"><MAP NAME="bot-6"><AREA SHAPE="Rect" COORDS="0,0,80,15" HREF="javascript:bot6()" onMouseOver=status("bot-6","bot-6-1") onMouseOut=status("bot-6","bot-0-1")></MAP></TD>
+		<TD></TD>
+	</TR>
+</TABLE>
+</BODY>
+</HTML>

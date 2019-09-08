@@ -1,0 +1,55 @@
+<HTML>
+<HEAD><TITLE>&nbsp;C O P R E L - Energia e Desenvolvimento&nbsp;</TITLE></HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+browser_name = navigator.appName;
+browser_version = parseFloat(navigator.appVersion);
+if (browser_name == "Netscape" && browser_version >= 3.0) { load = 'true'; }
+else if (browser_name == "Microsoft Internet Explorer" && browser_version >= 4.0) { load = 'true'; }
+else { load = 'false'; }
+if (load == 'true')
+{
+	b1=new Image(90,20);b1.src="images/botao-1-2.jpg";
+	b2=new Image(90,20);b2.src="images/botao-2-2.jpg";
+	b3=new Image(90,20);b3.src="images/botao-3-2.jpg";
+}
+function status(source,image)
+{
+	document.images[source].src = "images/"+image + ".jpg";
+}
+</SCRIPT>
+<STYLE TYPE="text/css">
+A:link, A:visited, A:active {color: #6699CC; text-decoration: none}
+A:hover {color: #6699CC}
+</STYLE>
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="images/background.jpg">
+<TABLE WIDTH="640" HEIGHT="480" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD HEIGHT="110" ALIGN="LEFT" VALIGN="TOP" COLSPAN="2">
+		<img src="images/logomarca.jpg" width=400 height=110 border=0><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="40" COLSPAN="2">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="395" HEIGHT="185" ALIGN="RIGHT" VALIGN="MIDDLE">
+		<IMG SRC="images/botao-1-1.jpg" WIDTH=210 HEIGHT=60 BORDER=0 NAME="botao-1" USEMAP="#botao-1"><MAP NAME="botao-1"><AREA SHAPE="Rect" COORDS="0,0,210,70" HREF="cartao.htm" onMouseOver=status("botao-1","botao-1-2") onMouseOut=status("botao-1","botao-1-1")></MAP><BR>
+		<IMG SRC="images/botao-2-1.jpg" WIDTH=210 HEIGHT=60 BORDER=0 NAME="botao-2" USEMAP="#botao-2"><MAP NAME="botao-2"><AREA SHAPE="Rect" COORDS="0,0,210,70" HREF="peculio.htm" onMouseOver=status("botao-2","botao-2-2") onMouseOut=status("botao-2","botao-2-1")></MAP><BR>
+		<IMG SRC="images/botao-3-1.jpg" WIDTH=210 HEIGHT=60 BORDER=0 NAME="botao-3" USEMAP="#botao-3"><MAP NAME="botao-3"><AREA SHAPE="Rect" COORDS="0,0,210,70" HREF="creditos.htm" onMouseOver=status("botao-3","botao-3-2") onMouseOut=status("botao-3","botao-3-1")></MAP><BR>
+		</TD>
+		<TD WIDTH="245" ALIGN="RIGHT" VALIGN="BOTTOM">
+		<IMG SRC="images/menu-1.jpg" WIDTH=245 HEIGHT=185 BORDER=0><BR>	
+		</TD>	
+	</TR>
+	<TR>
+		<TD HEIGHT="145" ALIGN="RIGHT">
+		<IMG SRC="images/menu-2.jpg" WIDTH=35 HEIGHT=145 BORDER=0><BR>
+		</TD>
+		<TD>
+		<IMG SRC="images/menu-3.jpg" WIDTH=245 HEIGHT=145 BORDER=0 USEMAP="#mail"><MAP NAME="mail"><AREA SHAPE="Rect" COORDS="175,105,245,145" HREF="mailto:centihum@zipmail.com.br"></MAP><BR>
+		</TD>	
+	</TR>
+</TABLE>
+</BODY>
+</HTML>

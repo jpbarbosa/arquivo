@@ -1,0 +1,54 @@
+<HTML><HEAD><TITLE>Hapner & Kroetz - Advogados</TITLE></HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+function ShowHideLayer() 
+{
+	var i, visStr, args, theObj;
+	args = ShowHideLayer.arguments;
+	for (i=0; i<(args.length-2); i+=3)
+	{
+    	visStr   = args[i+2];
+    	if (navigator.appName == 'Netscape' && document.layers != null)
+		{
+      		theObj = eval(args[i]);
+      		if (theObj) theObj.visibility = visStr;
+		}
+		else if (document.all != null)
+		{
+			if (visStr == 'show') visStr = 'visible';
+			if (visStr == 'hide') visStr = 'hidden';
+			theObj = eval(args[i+1]);
+			if (theObj) theObj.style.visibility = visStr;
+		}
+	}
+}
+function ShowLayer1()
+{
+	ShowHideLayer('document.layers[\'Layer1\']','document.all[\'Layer1\']','show')
+}
+function HideLayer1()
+{
+	ShowHideLayer('document.layers[\'Layer1\']','document.all[\'Layer1\']','hide')
+}
+</SCRIPT>
+<BODY BACKGROUND="../images/bg-margem-1.gif">
+<DIV ID="Layer1" STYLE="position:absolute; left:0px; top:0px; width:12px; height:32px; z-index:1; visibility: hidden">
+<MAP NAME="hide"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="#" ONMOUSEOVER="parent.frames[2].HideLayer()"></MAP>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD>
+		<IMG SRC="../images/xtra-0.gif" WIDTH=5 HEIGHT=12 BORDER=0 USEMAP="#hide"><BR>
+		</TD>
+		<TD BACKGROUND="../images/xtra-1.gif">
+		<IMG SRC="images/but-1-03-2.gif" WIDTH=6 HEIGHT=18 BORDER=0 NAME="but103" USEMAP="#but103"><MAP NAME="but103"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="col-2-2-2-1-clients.htm" TARGET="col-2-2-2" ALT="Clients" ONMOUSEOVER="parent.frames[4].Status('but103','but-1-03-1')" ONMOUSEOUT="parent.frames[4].Status('but103','but-1-03-0')" ONCLICK="parent.frames[2].Status('item','item-1-clients')"></MAP><BR>
+		<IMG SRC="images/but-1-04-2.gif" WIDTH=6 HEIGHT=19 BORDER=0 NAME="but104" USEMAP="#but104"><MAP NAME="but104"><AREA SHAPE="CIRCLE" COORDS="1,1,1000" HREF="col-2-2-2-1-contacts.htm" TARGET="col-2-2-2" ALT="Contacts" ONMOUSEOVER="parent.frames[4].Status('but104','but-1-04-1')" ONMOUSEOUT="parent.frames[4].Status('but104','but-1-04-0')" ONCLICK="parent.frames[2].Status('item','item-1-contacts')"></MAP><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN="3">
+		<IMG SRC="../images/xtra-0.gif" WIDTH=12 HEIGHT=20 BORDER=0 USEMAP="#hide"><BR>
+		</TD>
+	</TR>
+</TABLE>
+</DIV>
+</BODY>
+</HTML>
