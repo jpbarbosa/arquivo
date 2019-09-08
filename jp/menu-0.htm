@@ -24,8 +24,7 @@ if (preload == 'true'){
 }
 function status(source,image){
 	if(source!=thisItem&&source!='but0'){
-		if (document.all)document.images[source].src = "images/buttons/"+image + ".gif";
-		else document.layers['menu'].document.images[source].src = "images/buttons/"+image + ".gif";
+		document.images[source].src = "images/buttons/"+image + ".gif";
 	}
 }
 var thisItem = 'but0'
